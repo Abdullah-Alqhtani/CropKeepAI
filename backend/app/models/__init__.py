@@ -1,0 +1,31 @@
+from app.models.entities import (
+    ChatMessage,
+    ChatSession,
+    CropType,
+    DiagnosisResult,
+    DatasetImage,
+    Disease,
+    DiseaseProductMapping,
+    ImageUpload,
+    KnowledgeBaseEntry,
+    Product,
+    ProductRecommendation,
+    User,
+    UserRole,
+)
+
+__all__ = [
+    "ChatMessage",
+    "ChatSession",
+    "CropType",
+    "DiagnosisResult",
+    "DatasetImage",
+    "Disease",
+    "DiseaseProductMapping",
+    "ImageUpload",
+    "KnowledgeBaseEntry",
+    "Product",
+    "ProductRecommendation",
+    "User",
+    "UserRole",
+]

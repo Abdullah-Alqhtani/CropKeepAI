@@ -1,0 +1,52 @@
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: agromind
+      POSTGRES_USER: agromind
+      POSTGRES_PASSWORD: agromind
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U agromind -d agromind"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    env_file:
+      - ./backend/.env
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend/uploads:/app/uploads
+      - type: bind
+        source: "C:/Users/Shrii/Downloads/Crop Disease Annotation _ June 3 2026-20260617T092642Z-3-001/Crop Disease Annotation _ June 3 2026"
+        target: /datasets/cropkeepai-crop
+        read_only: true
+      - type: bind
+        source: "C:/Users/Shrii/Downloads/PlantVillage - Sample images"
+        target: /datasets/plantvillage
+        read_only: true
+    depends_on:
+      db:
+        condition: service_healthy
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    environment:
+      VITE_API_BASE_URL: http://localhost:8000
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
+
+volumes:
+  postgres_data:

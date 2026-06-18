@@ -1,0 +1,3509 @@
+﻿[
+    {
+        "Seq":  "1",
+        "Filename":  "b24cb2c9_crop01.jpg",
+        "Crop":  "葡萄",
+        "Disease":  "白粉病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "2",
+        "Filename":  "b24cb2c9_crop02.jpg",
+        "Crop":  "柑橘",
+        "Disease":  "炭疽病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "3",
+        "Filename":  "b24cb2c9_crop03.jpg",
+        "Crop":  "柑橘",
+        "Disease":  "疮痂病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "4",
+        "Filename":  "b24cb2c9_crop04.jpg",
+        "Crop":  "柑橘",
+        "Disease":  "沙皮病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "5",
+        "Filename":  "b24cb2c9_crop05.jpg",
+        "Crop":  "柑橘",
+        "Disease":  "树脂病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "6",
+        "Filename":  "b24cb2c9_crop06.jpg",
+        "Crop":  "柑橘",
+        "Disease":  "黑星病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "7",
+        "Filename":  "b24cb2c9_crop08.jpg",
+        "Crop":  "玉米",
+        "Disease":  "锈病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "8",
+        "Filename":  "30f62513_crop01.jpg",
+        "Crop":  "苹果",
+        "Disease":  "轮纹病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "9",
+        "Filename":  "30f62513_crop03.jpg",
+        "Crop":  "番茄",
+        "Disease":  "早疫病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "10",
+        "Filename":  "屏幕截图 2026-05-31 141448",
+        "Crop":  "苹果",
+        "Disease":  "炭疽病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "11",
+        "Filename":  "屏幕截图 2026-05-31 141619",
+        "Crop":  "梨",
+        "Disease":  "炭疽病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "12",
+        "Filename":  "屏幕截图 2026-05-31 141730",
+        "Crop":  "水稻",
+        "Disease":  "枯心苗",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "13",
+        "Filename":  "屏幕截图 2026-05-31 141949",
+        "Crop":  "橘子",
+        "Disease":  "青霉病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "14",
+        "Filename":  "屏幕截图 2026-05-31 142048",
+        "Crop":  "香蕉",
+        "Disease":  "根腐病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "15",
+        "Filename":  "屏幕截图 2026-05-31 142150",
+        "Crop":  "香蕉",
+        "Disease":  "炭疽病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "16",
+        "Filename":  "屏幕截图 2026-05-31 142229",
+        "Crop":  "橘子",
+        "Disease":  "炭疽病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "17",
+        "Filename":  "屏幕截图 2026-05-31 142421",
+        "Crop":  "苹果",
+        "Disease":  "晚疫病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "18",
+        "Filename":  "屏幕截图 2026-05-31 142601",
+        "Crop":  "黄瓜",
+        "Disease":  "白粉病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "19",
+        "Filename":  "屏幕截图 2026-05-31 142948",
+        "Crop":  "番茄",
+        "Disease":  "叶霉病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "20",
+        "Filename":  "屏幕截图 2026-05-31 143021",
+        "Crop":  "水稻",
+        "Disease":  "条斑病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "21",
+        "Filename":  "屏幕截图 2026-05-31 143608",
+        "Crop":  "花生",
+        "Disease":  "叶斑病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "22",
+        "Filename":  "屏幕截图 2026-05-31 143811",
+        "Crop":  "柑橘",
+        "Disease":  "疮痂病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "23",
+        "Filename":  "屏幕截图 2026-05-31 144008",
+        "Crop":  "柑橘",
+        "Disease":  "黑斑病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "24",
+        "Filename":  "屏幕截图 2026-05-31 144132",
+        "Crop":  "水稻",
+        "Disease":  "稻瘟病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "25",
+        "Filename":  "屏幕截图 2026-05-31 144210",
+        "Crop":  "棉花",
+        "Disease":  "枯萎病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "26",
+        "Filename":  "屏幕截图 2026-05-31 144340",
+        "Crop":  "柑橘",
+        "Disease":  "炭疽病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "27",
+        "Filename":  "屏幕截图 2026-05-31 144528",
+        "Crop":  "辣椒",
+        "Disease":  "炭疽病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "28",
+        "Filename":  "屏幕截图 2026-05-31 144653",
+        "Crop":  "大白菜",
+        "Disease":  "灰霉病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "29",
+        "Filename":  "屏幕截图 2026-05-31 144747",
+        "Crop":  "水稻",
+        "Disease":  "稻瘟病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "30",
+        "Filename":  "屏幕截图 2026-05-31 151816",
+        "Crop":  "玉米",
+        "Disease":  "茎腐病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "31",
+        "Filename":  "屏幕截图 2026-05-31 154436",
+        "Crop":  "花生",
+        "Disease":  "褐斑病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "32",
+        "Filename":  "屏幕截图 2026-05-31 155123",
+        "Crop":  "柑橘",
+        "Disease":  "蚧壳虫",
+        "Disease Type":  "虫害"
+    },
+    {
+        "Seq":  "33",
+        "Filename":  "微信图片_2026-06-01_163205_835",
+        "Crop":  "辣椒",
+        "Disease":  "脐腐病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "34",
+        "Filename":  "微信图片_2026-06-01_163238_487",
+        "Crop":  "辣椒",
+        "Disease":  "脐腐病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "35",
+        "Filename":  "微信图片_2026-06-02_135750_857",
+        "Crop":  "多肉",
+        "Disease":  "黑腐病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "36",
+        "Filename":  "微信图片_2026-06-02_140148_290",
+        "Crop":  "多肉",
+        "Disease":  "白粉蚧",
+        "Disease Type":  "虫害"
+    },
+    {
+        "Seq":  "37",
+        "Filename":  "微信图片_2026-06-02_140342_506",
+        "Crop":  "多肉",
+        "Disease":  "黑腐病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "38",
+        "Filename":  "微信图片_2026-06-02_140503_224",
+        "Crop":  "多肉",
+        "Disease":  "根腐病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "39",
+        "Filename":  "微信图片_2026-06-02_140619_821",
+        "Crop":  "多肉",
+        "Disease":  "白粉蚧",
+        "Disease Type":  "虫害"
+    },
+    {
+        "Seq":  "40",
+        "Filename":  "微信图片_2026-06-02_140827_582",
+        "Crop":  "多肉",
+        "Disease":  "蚜虫",
+        "Disease Type":  "虫害"
+    },
+    {
+        "Seq":  "41",
+        "Filename":  "微信图片_2026-06-02_140958_303",
+        "Crop":  "多肉",
+        "Disease":  "黑腐病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "42",
+        "Filename":  "微信图片_2026-06-02_141320_311",
+        "Crop":  "葡萄",
+        "Disease":  "大褐斑病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "43",
+        "Filename":  "微信图片_2026-06-02_141600_648",
+        "Crop":  "葡萄",
+        "Disease":  "大褐斑病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "44",
+        "Filename":  "微信图片_2026-06-02_141744_664",
+        "Crop":  "葡萄",
+        "Disease":  "白粉病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "45",
+        "Filename":  "微信图片_2026-06-02_141933_482",
+        "Crop":  "玫瑰",
+        "Disease":  "白粉病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "46",
+        "Filename":  "微信图片_2026-06-02_142549_071",
+        "Crop":  "阳光玫瑰",
+        "Disease":  "蓟马",
+        "Disease Type":  "虫害"
+    },
+    {
+        "Seq":  "47",
+        "Filename":  "微信图片_2026-06-02_150231_966",
+        "Crop":  "阳光玫瑰",
+        "Disease":  "灰霉病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "48",
+        "Filename":  "微信图片_2026-06-02_151015_161",
+        "Crop":  "葡萄",
+        "Disease":  "褐斑病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "49",
+        "Filename":  "微信图片_2026-06-02_151308_906",
+        "Crop":  "葡萄",
+        "Disease":  "房枯病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "50",
+        "Filename":  "微信图片_2026-06-02_151509_706",
+        "Crop":  "葡萄",
+        "Disease":  "房枯病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "51",
+        "Filename":  "微信图片_2026-06-02_151516_867",
+        "Crop":  "葡萄",
+        "Disease":  "房枯病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "52",
+        "Filename":  "微信图片_2026-06-02_151522_564",
+        "Crop":  "葡萄",
+        "Disease":  "房枯病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "53",
+        "Filename":  "微信图片_2026-06-02_151849_809",
+        "Crop":  "葡萄",
+        "Disease":  "疮痂病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "54",
+        "Filename":  "微信图片_2026-06-02_151858_769",
+        "Crop":  "葡萄",
+        "Disease":  "黑痘病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "55",
+        "Filename":  "微信图片_2026-06-02_154025_529",
+        "Crop":  "葡萄",
+        "Disease":  "大褐斑病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "56",
+        "Filename":  "微信图片_2026-06-02_155532_737",
+        "Crop":  "玫瑰",
+        "Disease":  "黑斑病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "57",
+        "Filename":  "微信图片_2026-06-02_161446_021",
+        "Crop":  "玫瑰",
+        "Disease":  "蚜虫",
+        "Disease Type":  "虫害"
+    },
+    {
+        "Seq":  "58",
+        "Filename":  "微信图片_2026-06-02_161755_997",
+        "Crop":  "玫瑰",
+        "Disease":  "根癌病",
+        "Disease Type":  "细菌病害"
+    },
+    {
+        "Seq":  "59",
+        "Filename":  "微信图片_2026-06-02_162024_497",
+        "Crop":  "月季",
+        "Disease":  "病毒病",
+        "Disease Type":  "细菌病害"
+    },
+    {
+        "Seq":  "60",
+        "Filename":  "微信图片_2026-06-02_162032_620",
+        "Crop":  "月季",
+        "Disease":  "病毒病",
+        "Disease Type":  "细菌病害"
+    },
+    {
+        "Seq":  "61",
+        "Filename":  "微信图片_2026-06-02_162341_485",
+        "Crop":  "葡萄",
+        "Disease":  "煤污病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "62",
+        "Filename":  "微信图片_2026-06-02_162658_059",
+        "Crop":  "葡萄",
+        "Disease":  "褐斑病 ",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "63",
+        "Filename":  "微信图片_2026-06-02_162908_276",
+        "Crop":  "月季",
+        "Disease":  "灰霉病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "64",
+        "Filename":  "微信图片_2026-06-02_163007_018",
+        "Crop":  "葡萄",
+        "Disease":  "褐枯病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "65",
+        "Filename":  "微信图片_2026-06-02_163223_615",
+        "Crop":  "葡萄",
+        "Disease":  "房枯病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "66",
+        "Filename":  "微信图片_2026-06-02_163451_204",
+        "Crop":  "葡萄",
+        "Disease":  "炭疽病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "67",
+        "Filename":  "微信图片_2026-06-02_163714_613",
+        "Crop":  "葡萄",
+        "Disease":  "黑痘病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "68",
+        "Filename":  "微信图片_2026-06-02_164322_366",
+        "Crop":  "月季",
+        "Disease":  "叶斑病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "69",
+        "Filename":  "微信图片_2026-06-02_164444_179",
+        "Crop":  "葡萄",
+        "Disease":  "蓟马",
+        "Disease Type":  "虫害"
+    },
+    {
+        "Seq":  "70",
+        "Filename":  "微信图片_2026-06-02_164603_968",
+        "Crop":  "葡萄",
+        "Disease":  "褐枯病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "71",
+        "Filename":  "微信图片_2026-06-02_164726_164",
+        "Crop":  "葡萄",
+        "Disease":  "褐斑病 ",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "72",
+        "Filename":  "微信图片_2026-06-02_164734_956",
+        "Crop":  "葡萄",
+        "Disease":  "褐斑病 ",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "73",
+        "Filename":  "微信图片_2026-06-02_164939_732",
+        "Crop":  "葡萄",
+        "Disease":  "褐枯病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "74",
+        "Filename":  "微信图片_2026-06-02_165134_659",
+        "Crop":  "月季",
+        "Disease":  "白粉病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "75",
+        "Filename":  "微信图片_2026-06-02_165226_054",
+        "Crop":  "月季",
+        "Disease":  "白粉病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "76",
+        "Filename":  "微信图片_2026-06-02_165259_413",
+        "Crop":  "月季",
+        "Disease":  "灰霉病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "77",
+        "Filename":  "微信图片_2026-06-02_165356_195",
+        "Crop":  "月季",
+        "Disease":  "黑斑病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "78",
+        "Filename":  "微信图片_2026-06-02_165512_228",
+        "Crop":  "月季",
+        "Disease":  "白粉病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "79",
+        "Filename":  "微信图片_2026-06-02_165516_776",
+        "Crop":  "月季",
+        "Disease":  "白粉病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "80",
+        "Filename":  "微信图片_2026-06-02_165926_566",
+        "Crop":  "月季",
+        "Disease":  "黑斑病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "81",
+        "Filename":  "微信图片_2026-06-02_170040_021",
+        "Crop":  "月季",
+        "Disease":  "茎腐病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "82",
+        "Filename":  "微信图片_2026-06-02_170655_974",
+        "Crop":  "西瓜",
+        "Disease":  "蔓枯病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "83",
+        "Filename":  "微信图片_2026-06-03_091914_987",
+        "Crop":  "玫瑰",
+        "Disease":  "灰霉病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "84",
+        "Filename":  "微信图片_2026-06-03_092800_140",
+        "Crop":  "玫瑰",
+        "Disease":  "蚜虫",
+        "Disease Type":  "虫害"
+    },
+    {
+        "Seq":  "85",
+        "Filename":  "微信图片_2026-06-03_093000_211",
+        "Crop":  "天堂鸟",
+        "Disease":  "炭疽病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "86",
+        "Filename":  "微信图片_2026-06-03_093206_226",
+        "Crop":  "穿心莲",
+        "Disease":  "叶斑病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "87",
+        "Filename":  "微信图片_2026-06-03_093344_628",
+        "Crop":  "百合花",
+        "Disease":  "叶枯病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "88",
+        "Filename":  "微信图片_2026-06-03_093820_564",
+        "Crop":  "富贵竹",
+        "Disease":  "叶斑病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "89",
+        "Filename":  "微信图片_2026-06-03_094146_139",
+        "Crop":  "富贵竹",
+        "Disease":  "炭疽病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "90",
+        "Filename":  "微信图片_2026-06-03_094432_191",
+        "Crop":  "富贵竹",
+        "Disease":  "叶斑病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "91",
+        "Filename":  "微信图片_2026-06-03_100323_493",
+        "Crop":  "发财树",
+        "Disease":  "炭疽病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "92",
+        "Filename":  "微信图片_2026-06-03_101020_877",
+        "Crop":  "发财树",
+        "Disease":  "蓟马",
+        "Disease Type":  "虫害"
+    },
+    {
+        "Seq":  "93",
+        "Filename":  "微信图片_2026-06-03_101133_549",
+        "Crop":  "发财树",
+        "Disease":  "红蜘蛛",
+        "Disease Type":  "虫害"
+    },
+    {
+        "Seq":  "94",
+        "Filename":  "微信图片_2026-06-03_101505_278",
+        "Crop":  "月季",
+        "Disease":  "煤污病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "95",
+        "Filename":  "微信图片_2026-06-03_101712_991",
+        "Crop":  "月季",
+        "Disease":  "灰霉病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "96",
+        "Filename":  "微信图片_2026-06-03_101820_301",
+        "Crop":  "花生",
+        "Disease":  "叶斑病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "97",
+        "Filename":  "微信图片_2026-06-03_101923_588",
+        "Crop":  "辣椒",
+        "Disease":  "脐腐病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "98",
+        "Filename":  "微信图片_2026-06-03_102130_919",
+        "Crop":  "茄子",
+        "Disease":  "棉疫病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "99",
+        "Filename":  "微信图片_2026-06-03_102250_756",
+        "Crop":  "黄瓜",
+        "Disease":  "病毒病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "100",
+        "Filename":  "微信图片_2026-06-03_102515_268",
+        "Crop":  "番茄",
+        "Disease":  "脐腐病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "101",
+        "Filename":  "微信图片_2026-06-03_102526_032",
+        "Crop":  "番茄",
+        "Disease":  "脐腐病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "102",
+        "Filename":  "微信图片_2026-06-02_102445_649.jpg",
+        "Crop":  "水稻",
+        "Disease":  "褐斑病",
+        "Disease Type":  "细菌病害"
+    },
+    {
+        "Seq":  "103",
+        "Filename":  "微信图片_2026-06-02_103856_760.jpg",
+        "Crop":  "水稻",
+        "Disease":  "立枯病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "104",
+        "Filename":  "微信图片_2026-06-02_110940_063.jpg",
+        "Crop":  "玉米",
+        "Disease":  "蓟马危害",
+        "Disease Type":  "虫害"
+    },
+    {
+        "Seq":  "105",
+        "Filename":  "微信图片_2026-06-02_110129_417.jpg",
+        "Crop":  "玉米",
+        "Disease":  "叶斑病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "106",
+        "Filename":  "微信图片_2026-06-02_110342_856.jpg",
+        "Crop":  "玉米",
+        "Disease":  "顶腐病",
+        "Disease Type":  "细菌病害"
+    },
+    {
+        "Seq":  "107",
+        "Filename":  "微信图片_2026-06-02_110819_328.jpg",
+        "Crop":  "花生",
+        "Disease":  "叶斑病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "108",
+        "Filename":  "微信图片_2026-06-02_110927_679.jpg",
+        "Crop":  "玉米",
+        "Disease":  "玉米螟危害",
+        "Disease Type":  "虫害"
+    },
+    {
+        "Seq":  "109",
+        "Filename":  "微信图片_2026-06-02_111304_743.jpg",
+        "Crop":  "玉米",
+        "Disease":  "锈腐病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "110",
+        "Filename":  "微信图片_2026-06-02_132503_538.jpg",
+        "Crop":  "土豆",
+        "Disease":  "早疫病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "111",
+        "Filename":  "微信图片_2026-06-02_112319_688.jpg",
+        "Crop":  "土豆",
+        "Disease":  "晚疫病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "112",
+        "Filename":  "微信图片_2026-06-02_133032_729.jpg",
+        "Crop":  "土豆",
+        "Disease":  "炭疽病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "113",
+        "Filename":  "微信图片_2026-06-02_133343_239.jpg",
+        "Crop":  "土豆",
+        "Disease":  "粉蚧类危害",
+        "Disease Type":  "虫害"
+    },
+    {
+        "Seq":  "114",
+        "Filename":  "微信图片_2026-06-02_134037_673.jpg",
+        "Crop":  "土豆",
+        "Disease":  "环腐病",
+        "Disease Type":  "细菌病害"
+    },
+    {
+        "Seq":  "115",
+        "Filename":  "微信图片_2026-06-02_134254_487.jpg",
+        "Crop":  "黄豆",
+        "Disease":  "叶斑病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "116",
+        "Filename":  "微信图片_2026-06-02_134618_344.jpg",
+        "Crop":  "黄豆",
+        "Disease":  "蝽类害虫危害",
+        "Disease Type":  "虫害"
+    },
+    {
+        "Seq":  "117",
+        "Filename":  "微信图片_2026-06-02_134648_224.jpg",
+        "Crop":  "黄豆",
+        "Disease":  "炭疽病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "118",
+        "Filename":  "微信图片_2026-06-02_135508_768.jpg",
+        "Crop":  "黄豆",
+        "Disease":  "蓟马危害",
+        "Disease Type":  "虫害"
+    },
+    {
+        "Seq":  "119",
+        "Filename":  "微信图片_2026-06-02_135602_783.jpg",
+        "Crop":  "黄豆",
+        "Disease":  "夜蛾类幼虫危害",
+        "Disease Type":  "虫害"
+    },
+    {
+        "Seq":  "120",
+        "Filename":  "微信图片_2026-06-02_140101_823.jpg",
+        "Crop":  "黄豆",
+        "Disease":  "斑枯病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "121",
+        "Filename":  "微信图片_2026-06-02_140340_792.jpg",
+        "Crop":  "山药",
+        "Disease":  "炭疽病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "122",
+        "Filename":  "微信图片_2026-06-02_141608_832.jpg",
+        "Crop":  "山药",
+        "Disease":  "红蜘蛛危害",
+        "Disease Type":  "虫害"
+    },
+    {
+        "Seq":  "123",
+        "Filename":  "微信图片_2026-06-02_142230_712.jpg",
+        "Crop":  "山药",
+        "Disease":  "褐斑病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "124",
+        "Filename":  "微信图片_2026-06-02_142245_215.jpg",
+        "Crop":  "山药",
+        "Disease":  "斜纹夜蛾危害",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "125",
+        "Filename":  "微信图片_2026-06-02_142532_376.jpg",
+        "Crop":  "绿豆",
+        "Disease":  "蝽类害虫危害",
+        "Disease Type":  "虫害"
+    },
+    {
+        "Seq":  "126",
+        "Filename":  "微信图片_2026-06-02_143106_441.jpg",
+        "Crop":  "绿豆",
+        "Disease":  "褐斑病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "127",
+        "Filename":  "微信图片_2026-06-02_143545_576.jpg",
+        "Crop":  "绿豆",
+        "Disease":  "煤霉病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "128",
+        "Filename":  "微信图片_2026-06-02_143535_969.jpg",
+        "Crop":  "绿豆",
+        "Disease":  "螨类危害",
+        "Disease Type":  "虫害"
+    },
+    {
+        "Seq":  "129",
+        "Filename":  "微信图片_2026-06-02_144411_088.jpg",
+        "Crop":  "绿豆",
+        "Disease":  "红斑病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "130",
+        "Filename":  "微信图片_2026-06-02_144707_104.jpg",
+        "Crop":  "花生",
+        "Disease":  "疮痂病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "131",
+        "Filename":  "微信图片_2026-06-02_144521_552.jpg",
+        "Crop":  "绿豆",
+        "Disease":  "斑疹病",
+        "Disease Type":  "细菌病害"
+    },
+    {
+        "Seq":  "132",
+        "Filename":  "微信图片_2026-06-02_145340_600.jpg",
+        "Crop":  "绿豆",
+        "Disease":  "叶斑病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "133",
+        "Filename":  "微信图片_2026-06-02_145403_160.jpg",
+        "Crop":  "绿豆",
+        "Disease":  "炭疽病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "134",
+        "Filename":  "微信图片_2026-06-02_145556_303.jpg",
+        "Crop":  "小麦",
+        "Disease":  "赤霉病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "135",
+        "Filename":  "微信图片_2026-06-02_145729_264.jpg",
+        "Crop":  "小麦",
+        "Disease":  "颖枯病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "136",
+        "Filename":  "微信图片_2026-06-02_145742_847.jpg",
+        "Crop":  "小麦",
+        "Disease":  "颖枯病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "137",
+        "Filename":  "微信图片_2026-06-02_150144_416.jpg",
+        "Crop":  "小麦",
+        "Disease":  "条锈病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "138",
+        "Filename":  "微信图片_2026-06-02_150253_631.jpg",
+        "Crop":  "小麦",
+        "Disease":  "赤霉病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "139",
+        "Filename":  "微信图片_2026-06-02_150354_040.jpg",
+        "Crop":  "小麦",
+        "Disease":  "叶枯病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "140",
+        "Filename":  "微信图片_2026-06-02_150457_775.jpg",
+        "Crop":  "小麦",
+        "Disease":  "叶枯病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "141",
+        "Filename":  "微信图片_2026-06-02_150519_152.jpg",
+        "Crop":  "小麦",
+        "Disease":  "叶枯病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "142",
+        "Filename":  "微信图片_2026-06-02_150504_272.jpg",
+        "Crop":  "小麦",
+        "Disease":  "叶枯病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "143",
+        "Filename":  "微信图片_2026-06-02_150816_295.jpg",
+        "Crop":  "小麦",
+        "Disease":  "叶枯病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "144",
+        "Filename":  "微信图片_2026-06-02_150859_728.jpg",
+        "Crop":  "小麦",
+        "Disease":  "蚜虫危害",
+        "Disease Type":  "虫害"
+    },
+    {
+        "Seq":  "145",
+        "Filename":  "微信图片_2026-06-02_153609_032.jpg",
+        "Crop":  "红豆",
+        "Disease":  "螨类危害",
+        "Disease Type":  "虫害"
+    },
+    {
+        "Seq":  "146",
+        "Filename":  "微信图片_2026-06-02_154001_440.jpg",
+        "Crop":  "水稻",
+        "Disease":  "螨类危害",
+        "Disease Type":  "虫害"
+    },
+    {
+        "Seq":  "147",
+        "Filename":  "微信图片_2026-06-02_154009_248.jpg",
+        "Crop":  "水稻",
+        "Disease":  "螨类危害",
+        "Disease Type":  "虫害"
+    },
+    {
+        "Seq":  "148",
+        "Filename":  "微信图片_2026-06-02_154019_336.jpg",
+        "Crop":  "水稻",
+        "Disease":  "螨类危害",
+        "Disease Type":  "虫害"
+    },
+    {
+        "Seq":  "149",
+        "Filename":  "微信图片_2026-06-02_154124_376.jpg",
+        "Crop":  "水稻",
+        "Disease":  "白叶枯病",
+        "Disease Type":  "细菌病害"
+    },
+    {
+        "Seq":  "150",
+        "Filename":  "微信图片_2026-06-02_154222_512.jpg",
+        "Crop":  "水稻",
+        "Disease":  "稻曲病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "151",
+        "Filename":  "微信图片_2026-06-02_154218_257.jpg",
+        "Crop":  "水稻",
+        "Disease":  "稻曲病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "152",
+        "Filename":  "微信图片_2026-06-02_154809_264.jpg",
+        "Crop":  "水稻",
+        "Disease":  "叶鞘腐败病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "153",
+        "Filename":  "微信图片_2026-06-02_155406_521.jpg",
+        "Crop":  "水稻",
+        "Disease":  "条斑病",
+        "Disease Type":  "细菌病害"
+    },
+    {
+        "Seq":  "154",
+        "Filename":  "微信图片_2026-06-02_155723_591.jpg",
+        "Crop":  "水稻",
+        "Disease":  "稻飞虱危害",
+        "Disease Type":  "虫害"
+    },
+    {
+        "Seq":  "155",
+        "Filename":  "微信图片_2026-06-02_161400_881.jpg",
+        "Crop":  "水稻",
+        "Disease":  "纹枯病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "156",
+        "Filename":  "微信图片_2026-06-02_161649_032.jpg",
+        "Crop":  "水稻",
+        "Disease":  "穗腐病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "157",
+        "Filename":  "微信图片_2026-06-02_162037_392.jpg",
+        "Crop":  "荞麦",
+        "Disease":  "褐斑病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "158",
+        "Filename":  "微信图片_2026-06-02_162207_105.jpg",
+        "Crop":  "豌豆",
+        "Disease":  "炭疽病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "159",
+        "Filename":  "微信图片_2026-06-02_162603_094.png",
+        "Crop":  "豌豆",
+        "Disease":  "白粉病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "160",
+        "Filename":  "微信图片_2026-06-02_162659_577.jpg",
+        "Crop":  "豌豆",
+        "Disease":  "根腐病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "161",
+        "Filename":  "微信图片_2026-06-02_164308_960.jpg",
+        "Crop":  "豌豆",
+        "Disease":  "炭疽病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "162",
+        "Filename":  "微信图片_2026-06-02_164403_857.jpg",
+        "Crop":  "豌豆",
+        "Disease":  "斑潜蝇危害",
+        "Disease Type":  "虫害"
+    },
+    {
+        "Seq":  "163",
+        "Filename":  "微信图片_2026-06-02_164954_048.jpg",
+        "Crop":  "豌豆",
+        "Disease":  "霜霉病",
+        "Disease Type":  "卵菌病害"
+    },
+    {
+        "Seq":  "164",
+        "Filename":  "微信图片_2026-06-02_165045_818.jpg",
+        "Crop":  "豌豆",
+        "Disease":  "霜霉病",
+        "Disease Type":  "卵菌病害"
+    },
+    {
+        "Seq":  "165",
+        "Filename":  "微信图片_2026-06-02_165037_968.jpg",
+        "Crop":  "豌豆",
+        "Disease":  "霜霉病",
+        "Disease Type":  "卵菌病害"
+    },
+    {
+        "Seq":  "166",
+        "Filename":  "微信图片_2026-06-02_165117_600.jpg",
+        "Crop":  "豌豆",
+        "Disease":  "蓟马危害",
+        "Disease Type":  "虫害"
+    },
+    {
+        "Seq":  "167",
+        "Filename":  "微信图片_2026-06-02_170340_287.jpg",
+        "Crop":  "豌豆",
+        "Disease":  "灰霉病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "168",
+        "Filename":  "微信图片_2026-06-02_170326_632.jpg",
+        "Crop":  "豌豆",
+        "Disease":  "灰霉病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "169",
+        "Filename":  "微信图片_2026-06-02_170522_536.jpg",
+        "Crop":  "豌豆",
+        "Disease":  "霜霉病",
+        "Disease Type":  "卵菌病害"
+    },
+    {
+        "Seq":  "170",
+        "Filename":  "微信图片_2026-06-02_170517_520.jpg",
+        "Crop":  "豌豆",
+        "Disease":  "霜霉病",
+        "Disease Type":  "卵菌病害"
+    },
+    {
+        "Seq":  "171",
+        "Filename":  "微信图片_2026-06-02_170527_320.jpg",
+        "Crop":  "豌豆",
+        "Disease":  "霜霉病",
+        "Disease Type":  "卵菌病害"
+    },
+    {
+        "Seq":  "172",
+        "Filename":  "微信图片_2026-06-02_170723_937.jpg",
+        "Crop":  "豌豆",
+        "Disease":  "锈病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "173",
+        "Filename":  "微信图片_2026-06-02_170754_017.jpg",
+        "Crop":  "豌豆",
+        "Disease":  "白粉病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "174",
+        "Filename":  "微信图片_2026-06-02_170816_721.jpg",
+        "Crop":  "豌豆",
+        "Disease":  "白粉病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "175",
+        "Filename":  "微信图片_2026-06-02_170922_442.jpg",
+        "Crop":  "豌豆",
+        "Disease":  "褐斑病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "176",
+        "Filename":  "微信图片_2026-06-02_172006_624.jpg",
+        "Crop":  "玉米",
+        "Disease":  "穗腐病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "177",
+        "Filename":  "微信图片_2026-06-02_172040_184.jpg",
+        "Crop":  "玉米",
+        "Disease":  "叶斑病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "178",
+        "Filename":  "微信图片_2026-06-02_172037_440.jpg",
+        "Crop":  "玉米",
+        "Disease":  "叶斑病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "179",
+        "Filename":  "微信图片_2026-06-02_172153_095.jpg",
+        "Crop":  "玉米",
+        "Disease":  "顶腐病",
+        "Disease Type":  "细菌病害"
+    },
+    {
+        "Seq":  "180",
+        "Filename":  "微信图片_2026-06-02_172148_968.jpg",
+        "Crop":  "玉米",
+        "Disease":  "顶腐病",
+        "Disease Type":  "细菌病害"
+    },
+    {
+        "Seq":  "181",
+        "Filename":  "微信图片_2026-06-02_172516_625.jpg",
+        "Crop":  "玉米",
+        "Disease":  "叶斑病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "182",
+        "Filename":  "微信图片_2026-06-02_172547_529.jpg",
+        "Crop":  "玉米",
+        "Disease":  "顶腐病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "183",
+        "Filename":  "微信图片_2026-06-02_172815_106.jpg",
+        "Crop":  "玉米",
+        "Disease":  "褐斑病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "184",
+        "Filename":  "微信图片_2026-06-02_172819_721.jpg",
+        "Crop":  "玉米",
+        "Disease":  "褐斑病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "185",
+        "Filename":  "微信图片_2026-06-02_173009_912.jpg",
+        "Crop":  "玉米",
+        "Disease":  "大斑病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "186",
+        "Filename":  "微信图片_2026-06-02_173015_817.jpg",
+        "Crop":  "玉米",
+        "Disease":  "大斑病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "187",
+        "Filename":  "微信图片_2026-06-02_173042_440.jpg",
+        "Crop":  "玉米",
+        "Disease":  "棉铃虫危害",
+        "Disease Type":  "虫害"
+    },
+    {
+        "Seq":  "188",
+        "Filename":  "微信图片_2026-06-02_173127_377.jpg",
+        "Crop":  "玉米",
+        "Disease":  "鞘腐病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "189",
+        "Filename":  "微信图片_2026-06-02_173221_584.jpg",
+        "Crop":  "玉米",
+        "Disease":  "炭疽病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "190",
+        "Filename":  "微信图片_2026-06-02_173217_458.jpg",
+        "Crop":  "玉米",
+        "Disease":  "炭疽病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "191",
+        "Filename":  "微信图片_2026-06-02_173228_112.jpg",
+        "Crop":  "玉米",
+        "Disease":  "炭疽病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "192",
+        "Filename":  "微信图片_2026-06-02_173339_896.jpg",
+        "Crop":  "玉米",
+        "Disease":  "鞘腐病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "193",
+        "Filename":  "微信图片_2026-06-02_173448_137.jpg",
+        "Crop":  "玉米",
+        "Disease":  "大斑病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "194",
+        "Filename":  "微信图片_2026-06-02_173452_168.jpg",
+        "Crop":  "玉米",
+        "Disease":  "大斑病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "195",
+        "Filename":  "微信图片_2026-06-02_173534_368.jpg",
+        "Crop":  "玉米",
+        "Disease":  "白粉病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "196",
+        "Filename":  "微信图片_2026-06-02_174417_440.jpg",
+        "Crop":  "燕麦",
+        "Disease":  "白粉病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "197",
+        "Filename":  "微信图片_2026-06-02_174353_912.jpg",
+        "Crop":  "燕麦",
+        "Disease":  "白粉病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "198",
+        "Filename":  "微信图片_2026-06-02_174431_937.jpg",
+        "Crop":  "燕麦",
+        "Disease":  "白粉病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "199",
+        "Filename":  "微信图片_2026-06-02_174806_624.jpg",
+        "Crop":  "红薯",
+        "Disease":  "炭疽病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "200",
+        "Filename":  "微信图片_2026-06-02_174939_271.jpg",
+        "Crop":  "红薯",
+        "Disease":  "霜霉病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "201",
+        "Filename":  "微信图片_2026-06-02_175050_961.jpg",
+        "Crop":  "红薯",
+        "Disease":  "蚧壳虫危害",
+        "Disease Type":  "虫害"
+    },
+    {
+        "Seq":  "202",
+        "Filename":  "微信图片_2026-06-02_163618_664",
+        "Crop":  "番茄",
+        "Disease":  "叶霉病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "203",
+        "Filename":  "微信图片_2026-06-02_163726_372",
+        "Crop":  "番茄",
+        "Disease":  "叶霉病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "204",
+        "Filename":  "微信图片_2026-06-02_163738_699",
+        "Crop":  "番茄",
+        "Disease":  "叶霉病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "205",
+        "Filename":  "微信图片_2026-06-02_163743_044",
+        "Crop":  "番茄",
+        "Disease":  "叶霉病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "206",
+        "Filename":  "微信图片_2026-06-02_163821_540",
+        "Crop":  "番茄",
+        "Disease":  "叶霉病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "207",
+        "Filename":  "微信图片_2026-06-02_165609_210",
+        "Crop":  "番茄",
+        "Disease":  "病毒病",
+        "Disease Type":  "感染性病害"
+    },
+    {
+        "Seq":  "208",
+        "Filename":  "微信图片_2026-06-02_165617_218",
+        "Crop":  "番茄",
+        "Disease":  "病毒病",
+        "Disease Type":  "感染性病害"
+    },
+    {
+        "Seq":  "209",
+        "Filename":  "微信图片_2026-06-02_165621_410",
+        "Crop":  "番茄",
+        "Disease":  "病毒病",
+        "Disease Type":  "感染性病害"
+    },
+    {
+        "Seq":  "210",
+        "Filename":  "微信图片_2026-06-02_170246_368",
+        "Crop":  "生菜",
+        "Disease":  "炭疽病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "211",
+        "Filename":  "微信图片_2026-06-02_170308_119",
+        "Crop":  "生菜",
+        "Disease":  "炭疽病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "212",
+        "Filename":  "微信图片_2026-06-02_170310_767",
+        "Crop":  "生菜",
+        "Disease":  "炭疽病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "213",
+        "Filename":  "微信图片_2026-06-02_170812_130",
+        "Crop":  "茨菇",
+        "Disease":  "炭疽病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "214",
+        "Filename":  "微信图片_2026-06-02_171329_780",
+        "Crop":  "罗勒",
+        "Disease":  "蓟马",
+        "Disease Type":  "蓟马虫害"
+    },
+    {
+        "Seq":  "215",
+        "Filename":  "微信图片_2026-06-02_171431_498",
+        "Crop":  "生菜",
+        "Disease":  "细菌病",
+        "Disease Type":  "细菌性病害"
+    },
+    {
+        "Seq":  "216",
+        "Filename":  "微信图片_2026-06-02_171557_446",
+        "Crop":  "上海青",
+        "Disease":  "黑腐病",
+        "Disease Type":  "细菌性病害"
+    },
+    {
+        "Seq":  "217",
+        "Filename":  "微信图片_2026-06-02_171601_557",
+        "Crop":  "上海青",
+        "Disease":  "黑腐病",
+        "Disease Type":  "细菌性病害"
+    },
+    {
+        "Seq":  "218",
+        "Filename":  "微信图片_2026-06-02_171759_864",
+        "Crop":  "花椰菜",
+        "Disease":  "霜霉病",
+        "Disease Type":  "细菌性病害"
+    },
+    {
+        "Seq":  "219",
+        "Filename":  "微信图片_2026-06-02_171803_455",
+        "Crop":  "花椰菜",
+        "Disease":  "霜霉病",
+        "Disease Type":  "细菌性病害"
+    },
+    {
+        "Seq":  "220",
+        "Filename":  "微信图片_2026-06-02_171921_156",
+        "Crop":  "葱",
+        "Disease":  "霜霉病",
+        "Disease Type":  "细菌性病害"
+    },
+    {
+        "Seq":  "221",
+        "Filename":  "微信图片_2026-06-02_171924_853",
+        "Crop":  "葱",
+        "Disease":  "霜霉病",
+        "Disease Type":  "细菌性病害"
+    },
+    {
+        "Seq":  "222",
+        "Filename":  "微信图片_2026-06-02_172335_265",
+        "Crop":  "空心菜",
+        "Disease":  "霜霉病",
+        "Disease Type":  "细菌性病害"
+    },
+    {
+        "Seq":  "223",
+        "Filename":  "微信图片_2026-06-02_172339_009",
+        "Crop":  "空心菜",
+        "Disease":  "霜霉病",
+        "Disease Type":  "细菌性病害"
+    },
+    {
+        "Seq":  "224",
+        "Filename":  "微信图片_2026-06-02_172433_678",
+        "Crop":  "油菜",
+        "Disease":  "炭疽病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "225",
+        "Filename":  "微信图片_2026-06-02_172638_201",
+        "Crop":  "油菜",
+        "Disease":  "炭疽病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "226",
+        "Filename":  "微信图片_2026-06-02_172732_494",
+        "Crop":  "白菜",
+        "Disease":  "霜霉病",
+        "Disease Type":  "细菌性病害"
+    },
+    {
+        "Seq":  "227",
+        "Filename":  "微信图片_2026-06-02_172935_040",
+        "Crop":  "空心菜",
+        "Disease":  "白锈病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "228",
+        "Filename":  "微信图片_2026-06-02_172942_673",
+        "Crop":  "空心菜",
+        "Disease":  "白锈病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "229",
+        "Filename":  "微信图片_2026-06-02_173054_957",
+        "Crop":  "油菜",
+        "Disease":  "霜霉病",
+        "Disease Type":  "细菌性病害"
+    },
+    {
+        "Seq":  "230",
+        "Filename":  "微信图片_2026-06-02_173101_245",
+        "Crop":  "油菜",
+        "Disease":  "霜霉病",
+        "Disease Type":  "细菌性病害"
+    },
+    {
+        "Seq":  "231",
+        "Filename":  "微信图片_2026-06-02_173221_353",
+        "Crop":  "莴笋",
+        "Disease":  "霜霉病",
+        "Disease Type":  "细菌性病害"
+    },
+    {
+        "Seq":  "232",
+        "Filename":  "微信图片_2026-06-02_173228_905",
+        "Crop":  "莴笋",
+        "Disease":  "霜霉病",
+        "Disease Type":  "细菌性病害"
+    },
+    {
+        "Seq":  "233",
+        "Filename":  "微信图片_2026-06-02_173317_119",
+        "Crop":  "苦荞麦",
+        "Disease":  "霜霉病",
+        "Disease Type":  "细菌性病害"
+    },
+    {
+        "Seq":  "234",
+        "Filename":  "微信图片_2026-06-02_173405_636",
+        "Crop":  "莴苣",
+        "Disease":  "霜霉病",
+        "Disease Type":  "细菌性病害"
+    },
+    {
+        "Seq":  "235",
+        "Filename":  "微信图片_2026-06-02_173443_907",
+        "Crop":  "白菜",
+        "Disease":  "霜霉病",
+        "Disease Type":  "细菌性病害"
+    },
+    {
+        "Seq":  "236",
+        "Filename":  "微信图片_2026-06-02_173447_419",
+        "Crop":  "白菜",
+        "Disease":  "霜霉病",
+        "Disease Type":  "细菌性病害"
+    },
+    {
+        "Seq":  "237",
+        "Filename":  "微信图片_2026-06-02_173455_859",
+        "Crop":  "白菜",
+        "Disease":  "霜霉病",
+        "Disease Type":  "细菌性病害"
+    },
+    {
+        "Seq":  "238",
+        "Filename":  "微信图片_2026-06-02_173500_874",
+        "Crop":  "白菜",
+        "Disease":  "霜霉病",
+        "Disease Type":  "细菌性病害"
+    },
+    {
+        "Seq":  "239",
+        "Filename":  "微信图片_2026-06-02_173614_168",
+        "Crop":  "白菜",
+        "Disease":  "叶甲",
+        "Disease Type":  "叶甲虫害"
+    },
+    {
+        "Seq":  "240",
+        "Filename":  "微信图片_2026-06-02_173618_622",
+        "Crop":  "白菜",
+        "Disease":  "叶甲",
+        "Disease Type":  "叶甲虫害"
+    },
+    {
+        "Seq":  "241",
+        "Filename":  "微信图片_2026-06-02_173752_659",
+        "Crop":  "韭菜",
+        "Disease":  "疫病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "242",
+        "Filename":  "微信图片_2026-06-02_174048_563",
+        "Crop":  "香菜",
+        "Disease":  "斑枯病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "243",
+        "Filename":  "微信图片_2026-06-02_174053_866",
+        "Crop":  "香菜",
+        "Disease":  "斑枯病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "244",
+        "Filename":  "微信图片_2026-06-02_174721_481",
+        "Crop":  "香菜",
+        "Disease":  "斑枯病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "245",
+        "Filename":  "微信图片_2026-06-02_174929_043",
+        "Crop":  "白菜",
+        "Disease":  "白斑病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "246",
+        "Filename":  "微信图片_2026-06-02_175053_696",
+        "Crop":  "白菜",
+        "Disease":  "白斑病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "247",
+        "Filename":  "微信图片_2026-06-02_175229_052",
+        "Crop":  "芹菜",
+        "Disease":  "斑枯病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "248",
+        "Filename":  "微信图片_2026-06-02_175237_403",
+        "Crop":  "芹菜",
+        "Disease":  "斑枯病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "249",
+        "Filename":  "微信图片_2026-06-02_175442_173",
+        "Crop":  "莴笋",
+        "Disease":  "斑潜蝇",
+        "Disease Type":  "斑潜蝇虫害"
+    },
+    {
+        "Seq":  "250",
+        "Filename":  "微信图片_2026-06-02_175546_810",
+        "Crop":  "散花",
+        "Disease":  "霜霉病",
+        "Disease Type":  "细菌性病害"
+    },
+    {
+        "Seq":  "251",
+        "Filename":  "微信图片_2026-06-02_175642_976",
+        "Crop":  "芹菜",
+        "Disease":  "软霉病",
+        "Disease Type":  "细菌性病害"
+    },
+    {
+        "Seq":  "252",
+        "Filename":  "微信图片_2026-06-02_175758_149",
+        "Crop":  "油麦菜",
+        "Disease":  "软霉病",
+        "Disease Type":  "细菌性病害"
+    },
+    {
+        "Seq":  "253",
+        "Filename":  "微信图片_2026-06-02_175845_794",
+        "Crop":  "芹菜",
+        "Disease":  "软霉病",
+        "Disease Type":  "细菌性病害"
+    },
+    {
+        "Seq":  "254",
+        "Filename":  "微信图片_2026-06-02_175928_369",
+        "Crop":  "莴笋",
+        "Disease":  "霜霉病",
+        "Disease Type":  "细菌性病害"
+    },
+    {
+        "Seq":  "255",
+        "Filename":  "微信图片_2026-06-02_180037_094",
+        "Crop":  "白菜",
+        "Disease":  "软腐病",
+        "Disease Type":  "细菌性病害"
+    },
+    {
+        "Seq":  "256",
+        "Filename":  "微信图片_2026-06-02_180040_822",
+        "Crop":  "白菜",
+        "Disease":  "软腐病",
+        "Disease Type":  "细菌性病害"
+    },
+    {
+        "Seq":  "257",
+        "Filename":  "微信图片_2026-06-02_180222_952",
+        "Crop":  "枸杞叶",
+        "Disease":  "蚧壳虫",
+        "Disease Type":  "蚧壳虫害"
+    },
+    {
+        "Seq":  "258",
+        "Filename":  "微信图片_2026-06-02_180227_898",
+        "Crop":  "枸杞叶",
+        "Disease":  "蚧壳虫",
+        "Disease Type":  "蚧壳虫害"
+    },
+    {
+        "Seq":  "259",
+        "Filename":  "微信图片_2026-06-02_180736_835",
+        "Crop":  "葱",
+        "Disease":  "疫病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "260",
+        "Filename":  "微信图片_2026-06-02_180742_259",
+        "Crop":  "葱",
+        "Disease":  "疫病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "261",
+        "Filename":  "微信图片_2026-06-02_180818_761",
+        "Crop":  "韭菜",
+        "Disease":  "灰霉病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "262",
+        "Filename":  "微信图片_2026-06-02_180826_329",
+        "Crop":  "韭菜",
+        "Disease":  "灰霉病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "263",
+        "Filename":  "微信图片_2026-06-02_181000_381",
+        "Crop":  "白菜",
+        "Disease":  "白锈病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "264",
+        "Filename":  "微信图片_2026-06-02_181118_241",
+        "Crop":  "白菜",
+        "Disease":  "霜霉病",
+        "Disease Type":  "细菌性病害"
+    },
+    {
+        "Seq":  "265",
+        "Filename":  "微信图片_2026-06-02_181307_117",
+        "Crop":  "菠菜",
+        "Disease":  "痿螨",
+        "Disease Type":  "痿螨虫害"
+    },
+    {
+        "Seq":  "266",
+        "Filename":  "微信图片_2026-06-02_181434_528",
+        "Crop":  "葱",
+        "Disease":  "蓟马",
+        "Disease Type":  "蓟马虫害"
+    },
+    {
+        "Seq":  "267",
+        "Filename":  "微信图片_2026-06-02_181620_923",
+        "Crop":  "大蒜",
+        "Disease":  "叶枯病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "268",
+        "Filename":  "微信图片_2026-06-02_181730_473",
+        "Crop":  "白菜",
+        "Disease":  "黑斑病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "269",
+        "Filename":  "微信图片_2026-06-02_181831_485",
+        "Crop":  "油菜",
+        "Disease":  "霜霉病",
+        "Disease Type":  "细菌性病害"
+    },
+    {
+        "Seq":  "270",
+        "Filename":  "微信图片_2026-06-02_182008_217",
+        "Crop":  "芥菜",
+        "Disease":  "霜霉病",
+        "Disease Type":  "细菌性病害"
+    },
+    {
+        "Seq":  "271",
+        "Filename":  "微信图片_2026-06-02_182104_983",
+        "Crop":  "生菜",
+        "Disease":  "软腐病",
+        "Disease Type":  "细菌性病害"
+    },
+    {
+        "Seq":  "272",
+        "Filename":  "微信图片_2026-06-02_182112_150",
+        "Crop":  "生菜",
+        "Disease":  "软腐病",
+        "Disease Type":  "细菌性病害"
+    },
+    {
+        "Seq":  "273",
+        "Filename":  "微信图片_2026-06-02_182225_620",
+        "Crop":  "芹菜",
+        "Disease":  "黏菌病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "274",
+        "Filename":  "微信图片_2026-06-02_182347_112",
+        "Crop":  "油麦菜",
+        "Disease":  "蚜虫",
+        "Disease Type":  "蚜虫虫害"
+    },
+    {
+        "Seq":  "275",
+        "Filename":  "微信图片_2026-06-02_182350_944",
+        "Crop":  "油麦菜",
+        "Disease":  "蚜虫",
+        "Disease Type":  "蚜虫虫害"
+    },
+    {
+        "Seq":  "276",
+        "Filename":  "微信图片_2026-06-02_182446_934",
+        "Crop":  "油麦菜",
+        "Disease":  "霜霉病",
+        "Disease Type":  "细菌性病害"
+    },
+    {
+        "Seq":  "277",
+        "Filename":  "微信图片_2026-06-02_182451_750",
+        "Crop":  "油麦菜",
+        "Disease":  "霜霉病",
+        "Disease Type":  "细菌性病害"
+    },
+    {
+        "Seq":  "278",
+        "Filename":  "微信图片_2026-06-02_182541_874",
+        "Crop":  "油菜花",
+        "Disease":  "根腐病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "279",
+        "Filename":  "微信图片_2026-06-02_182659_607",
+        "Crop":  "菠菜",
+        "Disease":  "霜霉病",
+        "Disease Type":  "霜霉病"
+    },
+    {
+        "Seq":  "280",
+        "Filename":  "微信图片_2026-06-03_104936_655",
+        "Crop":  "豆角",
+        "Disease":  "斑枯病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "281",
+        "Filename":  "微信图片_2026-06-03_105431_353",
+        "Crop":  "玉米",
+        "Disease":  "茎腐病",
+        "Disease Type":  "细菌性病害"
+    },
+    {
+        "Seq":  "282",
+        "Filename":  "微信图片_2026-06-03_105445_096",
+        "Crop":  "玉米",
+        "Disease":  "茎腐病",
+        "Disease Type":  "细菌性病害"
+    },
+    {
+        "Seq":  "283",
+        "Filename":  "微信图片_2026-06-03_105839_222",
+        "Crop":  "甘蓝",
+        "Disease":  "菌核病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "284",
+        "Filename":  "微信图片_2026-06-03_105843_278",
+        "Crop":  "甘蓝",
+        "Disease":  "菌核病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "285",
+        "Filename":  "微信图片_2026-06-03_111332_262",
+        "Crop":  "白菜",
+        "Disease":  "蚜虫",
+        "Disease Type":  "蚜虫虫害"
+    },
+    {
+        "Seq":  "286",
+        "Filename":  "微信图片_2026-06-03_111444_971",
+        "Crop":  "红薯叶",
+        "Disease":  "蚜虫",
+        "Disease Type":  "蚜虫虫害"
+    },
+    {
+        "Seq":  "287",
+        "Filename":  "微信图片_2026-06-03_111610_055",
+        "Crop":  "红薯叶",
+        "Disease":  "蚜虫",
+        "Disease Type":  "蚜虫虫害"
+    },
+    {
+        "Seq":  "288",
+        "Filename":  "微信图片_2026-06-03_112021_795",
+        "Crop":  "黄瓜",
+        "Disease":  "霜霉病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "289",
+        "Filename":  "微信图片_2026-06-03_112026_995",
+        "Crop":  "黄瓜",
+        "Disease":  "霜霉病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "290",
+        "Filename":  "微信图片_2026-06-03_112031_315",
+        "Crop":  "黄瓜",
+        "Disease":  "霜霉病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "291",
+        "Filename":  "微信图片_2026-06-03_112037_683",
+        "Crop":  "黄瓜",
+        "Disease":  "霜霉病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "292",
+        "Filename":  "微信图片_2026-06-03_112235_894",
+        "Crop":  "黄瓜",
+        "Disease":  "黑星病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "293",
+        "Filename":  "微信图片_2026-06-03_112239_662",
+        "Crop":  "黄瓜",
+        "Disease":  "黑星病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "294",
+        "Filename":  "微信图片_2026-06-03_112245_213",
+        "Crop":  "黄瓜",
+        "Disease":  "黑星病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "295",
+        "Filename":  "微信图片_2026-06-03_130704_672",
+        "Crop":  "苦瓜",
+        "Disease":  "根腐病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "296",
+        "Filename":  "微信图片_2026-06-03_130708_560",
+        "Crop":  "苦瓜",
+        "Disease":  "根腐病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "297",
+        "Filename":  "微信图片_2026-06-03_135800_961",
+        "Crop":  "西葫芦",
+        "Disease":  "花腐病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "298",
+        "Filename":  "微信图片_2026-06-03_140029_794",
+        "Crop":  "黄瓜",
+        "Disease":  "病毒病",
+        "Disease Type":  "病毒病害"
+    },
+    {
+        "Seq":  "299",
+        "Filename":  "微信图片_2026-06-03_140034_889",
+        "Crop":  "黄瓜",
+        "Disease":  "病毒病",
+        "Disease Type":  "病毒病害"
+    },
+    {
+        "Seq":  "300",
+        "Filename":  "微信图片_2026-06-03_140311_483",
+        "Crop":  "南瓜",
+        "Disease":  "枯萎病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "301",
+        "Filename":  "微信图片_2026-06-03_140506_397",
+        "Crop":  "南瓜",
+        "Disease":  "白粉病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "302",
+        "Filename":  "微信图片_2026-06-03_091551_942",
+        "Crop":  "山药",
+        "Disease":  "叶斑病",
+        "Disease Type":  "真菌性病害"
+    },
+    {
+        "Seq":  "303",
+        "Filename":  "微信图片_2026-06-03_092723_438",
+        "Crop":  "小麦",
+        "Disease":  "颖枯病",
+        "Disease Type":  "真菌性病害"
+    },
+    {
+        "Seq":  "304",
+        "Filename":  "微信图片_2026-06-03_093036_198",
+        "Crop":  "豆角",
+        "Disease":  "病毒病",
+        "Disease Type":  "病毒性病害"
+    },
+    {
+        "Seq":  "305",
+        "Filename":  "微信图片_2026-06-03_093553_773",
+        "Crop":  "玉米",
+        "Disease":  "缺锌生理病害",
+        "Disease Type":  "生理性缺素病害"
+    },
+    {
+        "Seq":  "306",
+        "Filename":  "微信图片_2026-06-03_093930_598",
+        "Crop":  "草莓",
+        "Disease":  "细菌性断头病",
+        "Disease Type":  "细菌性病害"
+    },
+    {
+        "Seq":  "307",
+        "Filename":  "微信图片_2026-06-03_094103_550",
+        "Crop":  "西瓜",
+        "Disease":  "霜霉病",
+        "Disease Type":  "真菌性侵染病害"
+    },
+    {
+        "Seq":  "308",
+        "Filename":  "微信图片_2026-06-03_094252_894",
+        "Crop":  "茭白",
+        "Disease":  "纹枯病",
+        "Disease Type":  "真菌性病害"
+    },
+    {
+        "Seq":  "309",
+        "Filename":  "微信图片_2026-06-03_094358_111",
+        "Crop":  "小番茄",
+        "Disease":  "轮纹斑病",
+        "Disease Type":  "真菌性病害"
+    },
+    {
+        "Seq":  "310",
+        "Filename":  "微信图片_2026-06-03_094511_269",
+        "Crop":  "甜瓜",
+        "Disease":  "病毒病",
+        "Disease Type":  "病毒性侵染病害"
+    },
+    {
+        "Seq":  "311",
+        "Filename":  "微信图片_2026-06-03_094617_381",
+        "Crop":  "核桃",
+        "Disease":  "黑疤病",
+        "Disease Type":  "细菌性病害"
+    },
+    {
+        "Seq":  "312",
+        "Filename":  "微信图片_2026-06-03_094724_998",
+        "Crop":  "冬瓜",
+        "Disease":  "蔓枯病",
+        "Disease Type":  "真菌性病害"
+    },
+    {
+        "Seq":  "313",
+        "Filename":  "微信图片_2026-06-03_094950_342",
+        "Crop":  "水稻秧苗",
+        "Disease":  "烂秧病",
+        "Disease Type":  "真菌性病害"
+    },
+    {
+        "Seq":  "314",
+        "Filename":  "微信图片_2026-06-03_095048_926",
+        "Crop":  "苹果树",
+        "Disease":  "根腐病",
+        "Disease Type":  "真菌性土传侵染病害"
+    },
+    {
+        "Seq":  "315",
+        "Filename":  "微信图片_2026-06-03_095500_238",
+        "Crop":  "猕猴桃",
+        "Disease":  "褐斑病",
+        "Disease Type":  "真菌性病害"
+    },
+    {
+        "Seq":  "316",
+        "Filename":  "微信图片_2026-06-03_100539_291",
+        "Crop":  "烟草",
+        "Disease":  "病毒病",
+        "Disease Type":  "病毒性侵染病害"
+    },
+    {
+        "Seq":  "317",
+        "Filename":  "微信图片_2026-06-03_100652_428",
+        "Crop":  "南瓜",
+        "Disease":  "霜霉病",
+        "Disease Type":  "低等真菌性侵染病害"
+    },
+    {
+        "Seq":  "318",
+        "Filename":  "微信图片_2026-06-03_100835_228",
+        "Crop":  "西瓜",
+        "Disease":  "白粉病",
+        "Disease Type":  "真菌性病害"
+    },
+    {
+        "Seq":  "319",
+        "Filename":  "微信图片_2026-06-03_101655_332",
+        "Crop":  "枇杷",
+        "Disease":  "日灼病",
+        "Disease Type":  "非侵染性生理性病害"
+    },
+    {
+        "Seq":  "320",
+        "Filename":  "微信图片_2026-06-03_101827_619",
+        "Crop":  "柑橘",
+        "Disease":  "黄龙病",
+        "Disease Type":  "细菌性病害"
+    },
+    {
+        "Seq":  "321",
+        "Filename":  "微信图片_2026-06-03_102024_260",
+        "Crop":  "甘蔗",
+        "Disease":  "胡麻叶斑病",
+        "Disease Type":  "真菌性侵染病害"
+    },
+    {
+        "Seq":  "322",
+        "Filename":  "微信图片_2026-06-03_102213_100",
+        "Crop":  "葡萄",
+        "Disease":  "霜霉病",
+        "Disease Type":  "低等真菌性侵染病害"
+    },
+    {
+        "Seq":  "323",
+        "Filename":  "微信图片_2026-06-03_102343_916",
+        "Crop":  "番茄",
+        "Disease":  "晚疫病",
+        "Disease Type":  "低等真菌病害"
+    },
+    {
+        "Seq":  "324",
+        "Filename":  "微信图片_2026-06-03_102437_530",
+        "Crop":  "茶",
+        "Disease":  "炭疽病",
+        "Disease Type":  "真菌性侵染病害"
+    },
+    {
+        "Seq":  "325",
+        "Filename":  "微信图片_2026-06-03_102529_475",
+        "Crop":  "桃子",
+        "Disease":  "果腐病",
+        "Disease Type":  "真菌性侵染病害"
+    },
+    {
+        "Seq":  "326",
+        "Filename":  "微信图片_2026-06-03_102628_171",
+        "Crop":  "桃树",
+        "Disease":  "根腐病",
+        "Disease Type":  "真菌性土传侵染病害"
+    },
+    {
+        "Seq":  "327",
+        "Filename":  "微信图片_2026-06-03_102740_739",
+        "Crop":  "玉米",
+        "Disease":  "大斑病",
+        "Disease Type":  "真菌性侵染病害"
+    },
+    {
+        "Seq":  "328",
+        "Filename":  "微信图片_2026-06-03_102843_659",
+        "Crop":  "番茄",
+        "Disease":  "炭疽病",
+        "Disease Type":  "真菌性侵染病害"
+    },
+    {
+        "Seq":  "329",
+        "Filename":  "微信图片_2026-06-03_103113_715",
+        "Crop":  "番茄",
+        "Disease":  "猝倒病",
+        "Disease Type":  "低等真菌土传病害"
+    },
+    {
+        "Seq":  "330",
+        "Filename":  "微信图片_2026-06-03_103236_715",
+        "Crop":  "线椒",
+        "Disease":  "畸形果",
+        "Disease Type":  "非侵染性生理性病害"
+    },
+    {
+        "Seq":  "331",
+        "Filename":  "微信图片_2026-06-03_103330_170",
+        "Crop":  "桃树",
+        "Disease":  "缩叶病",
+        "Disease Type":  "真菌性侵染病害"
+    },
+    {
+        "Seq":  "332",
+        "Filename":  "微信图片_2026-06-03_103535_692",
+        "Crop":  "小麦",
+        "Disease":  "条锈病",
+        "Disease Type":  "真菌性气流传播病害"
+    },
+    {
+        "Seq":  "333",
+        "Filename":  "微信图片_2026-06-03_103748_371",
+        "Crop":  "桃树",
+        "Disease":  "细菌性穿孔病",
+        "Disease Type":  "细菌性侵染病害"
+    },
+    {
+        "Seq":  "334",
+        "Filename":  "微信图片_2026-06-03_103850_418",
+        "Crop":  "番茄",
+        "Disease":  "早疫病",
+        "Disease Type":  "真菌性侵染病害"
+    },
+    {
+        "Seq":  "335",
+        "Filename":  "微信图片_2026-06-03_103958_466",
+        "Crop":  "番茄",
+        "Disease":  "茶色果",
+        "Disease Type":  "非侵染性生理性病害"
+    },
+    {
+        "Seq":  "336",
+        "Filename":  "微信图片_2026-06-03_104213_939",
+        "Crop":  "大白菜",
+        "Disease":  "软腐病",
+        "Disease Type":  "细菌性土传病害"
+    },
+    {
+        "Seq":  "337",
+        "Filename":  "微信图片_2026-06-03_104404_954",
+        "Crop":  "葡萄",
+        "Disease":  "褐斑病",
+        "Disease Type":  "真菌性侵染病害"
+    },
+    {
+        "Seq":  "338",
+        "Filename":  "微信图片_2026-06-03_104501_323",
+        "Crop":  "茄子",
+        "Disease":  "日灼病",
+        "Disease Type":  "非侵染性生理性病害"
+    },
+    {
+        "Seq":  "339",
+        "Filename":  "微信图片_2026-06-03_104556_202",
+        "Crop":  "草莓",
+        "Disease":  "茎基腐病",
+        "Disease Type":  "真菌性土传侵染病害"
+    },
+    {
+        "Seq":  "340",
+        "Filename":  "微信图片_2026-06-03_104704_963",
+        "Crop":  "菜豆",
+        "Disease":  "炭疽病",
+        "Disease Type":  "真菌性侵染病害"
+    },
+    {
+        "Seq":  "341",
+        "Filename":  "微信图片_2026-06-03_104808_874",
+        "Crop":  "瓜栗",
+        "Disease":  "叶尖叶缘枯焦",
+        "Disease Type":  "非侵染性生理性病害"
+    },
+    {
+        "Seq":  "342",
+        "Filename":  "微信图片_2026-06-03_104911_235",
+        "Crop":  "大蒜",
+        "Disease":  "叶枯病",
+        "Disease Type":  "真菌性侵染病害"
+    },
+    {
+        "Seq":  "343",
+        "Filename":  "微信图片_2026-06-03_105038_403",
+        "Crop":  "草莓",
+        "Disease":  "白粉病",
+        "Disease Type":  "真菌性侵染病害"
+    },
+    {
+        "Seq":  "344",
+        "Filename":  "微信图片_2026-06-03_105152_284",
+        "Crop":  "油菜",
+        "Disease":  "菌核病",
+        "Disease Type":  "真菌性土传侵染病害"
+    },
+    {
+        "Seq":  "345",
+        "Filename":  "微信图片_2026-06-03_105459_068",
+        "Crop":  "甜瓜",
+        "Disease":  "细菌性角斑病",
+        "Disease Type":  "细菌性侵染病害"
+    },
+    {
+        "Seq":  "346",
+        "Filename":  "微信图片_2026-06-03_105547_948",
+        "Crop":  "甜瓜",
+        "Disease":  "青枯病",
+        "Disease Type":  "细菌性病害"
+    },
+    {
+        "Seq":  "347",
+        "Filename":  "微信图片_2026-06-03_105703_810",
+        "Crop":  "草莓",
+        "Disease":  " 缺磷",
+        "Disease Type":  "生理性缺素病害"
+    },
+    {
+        "Seq":  "348",
+        "Filename":  "微信图片_2026-06-03_110019_228",
+        "Crop":  "草莓",
+        "Disease":  "灰霉病",
+        "Disease Type":  "真菌性侵染病害"
+    },
+    {
+        "Seq":  "349",
+        "Filename":  "微信图片_2026-06-03_110127_508",
+        "Crop":  "番茄",
+        "Disease":  "灰霉病",
+        "Disease Type":  "真菌性侵染病害"
+    },
+    {
+        "Seq":  "350",
+        "Filename":  "微信图片_2026-06-03_110205_819",
+        "Crop":  "茄子",
+        "Disease":  "白粉病",
+        "Disease Type":  "真菌性病害"
+    },
+    {
+        "Seq":  "351",
+        "Filename":  "微信图片_2026-06-03_110331_234",
+        "Crop":  "番茄",
+        "Disease":  "溃疡病果",
+        "Disease Type":  "细菌性病害"
+    },
+    {
+        "Seq":  "352",
+        "Filename":  "微信图片_2026-06-03_130414_121",
+        "Crop":  "草莓",
+        "Disease":  "缺铁黄化",
+        "Disease Type":  "非侵染性生理性病害"
+    },
+    {
+        "Seq":  "353",
+        "Filename":  "微信图片_2026-06-03_130513_320",
+        "Crop":  "豌豆",
+        "Disease":  "根腐病",
+        "Disease Type":  "真菌性土传侵染病害"
+    },
+    {
+        "Seq":  "354",
+        "Filename":  "微信图片_2026-06-03_130628_751",
+        "Crop":  "花菜",
+        "Disease":  "软腐病",
+        "Disease Type":  "细菌性侵染病害"
+    },
+    {
+        "Seq":  "355",
+        "Filename":  "微信图片_2026-06-03_131007_935",
+        "Crop":  "番茄",
+        "Disease":  "晚疫病",
+        "Disease Type":  "卵菌纲真菌性侵染病害"
+    },
+    {
+        "Seq":  "356",
+        "Filename":  "微信图片_2026-06-03_131135_816",
+        "Crop":  "番茄",
+        "Disease":  "缺磷",
+        "Disease Type":  "生理性缺素病害"
+    },
+    {
+        "Seq":  "357",
+        "Filename":  "微信图片_2026-06-03_131256_528",
+        "Crop":  "甜豆",
+        "Disease":  "白粉病",
+        "Disease Type":  "真菌性侵染病害"
+    },
+    {
+        "Seq":  "358",
+        "Filename":  "微信图片_2026-06-03_131438_872",
+        "Crop":  "玉米",
+        "Disease":  "粗缩病",
+        "Disease Type":  "病毒性病害"
+    },
+    {
+        "Seq":  "359",
+        "Filename":  "微信图片_2026-06-03_131539_776",
+        "Crop":  "黄瓜",
+        "Disease":  "病毒病",
+        "Disease Type":  "病毒性侵染病害"
+    },
+    {
+        "Seq":  "360",
+        "Filename":  "微信图片_2026-06-03_131707_128",
+        "Crop":  "茄子",
+        "Disease":  "缺铁",
+        "Disease Type":  "生理性缺素病害"
+    },
+    {
+        "Seq":  "361",
+        "Filename":  "微信图片_2026-06-03_131832_600",
+        "Crop":  "番茄",
+        "Disease":  "褐斑病",
+        "Disease Type":  "真菌性病害"
+    },
+    {
+        "Seq":  "362",
+        "Filename":  "微信图片_2026-06-03_132021_808",
+        "Crop":  "茄子",
+        "Disease":  "早疫病",
+        "Disease Type":  "真菌性病害"
+    },
+    {
+        "Seq":  "363",
+        "Filename":  "微信图片_2026-06-03_132137_864",
+        "Crop":  "甜瓜",
+        "Disease":  "蔓枯病茎秆",
+        "Disease Type":  "真菌性病害"
+    },
+    {
+        "Seq":  "364",
+        "Filename":  "微信图片_2026-06-03_133638_095",
+        "Crop":  "西瓜",
+        "Disease":  "缺铁",
+        "Disease Type":  "生理性病害"
+    },
+    {
+        "Seq":  "365",
+        "Filename":  "微信图片_2026-06-03_133852_816",
+        "Crop":  "小麦",
+        "Disease":  "条绣病",
+        "Disease Type":  "真菌性病害"
+    },
+    {
+        "Seq":  "366",
+        "Filename":  "微信图片_2026-06-03_133936_992",
+        "Crop":  "小麦",
+        "Disease":  "花叶病",
+        "Disease Type":  "病毒性病害"
+    },
+    {
+        "Seq":  "367",
+        "Filename":  "微信图片_2026-06-03_134146_543",
+        "Crop":  "小麦",
+        "Disease":  "赤霉病",
+        "Disease Type":  "真菌性病害"
+    },
+    {
+        "Seq":  "368",
+        "Filename":  "微信图片_2026-06-03_134256_823",
+        "Crop":  "小麦",
+        "Disease":  "黄矮病",
+        "Disease Type":  "病毒性病害"
+    },
+    {
+        "Seq":  "369",
+        "Filename":  "微信图片_2026-06-03_134518_062",
+        "Crop":  "小麦",
+        "Disease":  "花叶病",
+        "Disease Type":  "病毒性病害"
+    },
+    {
+        "Seq":  "370",
+        "Filename":  "微信图片_2026-06-03_134948_072",
+        "Crop":  "小麦",
+        "Disease":  "纹枯病",
+        "Disease Type":  "真菌性病害"
+    },
+    {
+        "Seq":  "371",
+        "Filename":  "微信图片_2026-06-03_135132_224",
+        "Crop":  "马铃薯",
+        "Disease":  "晚疫病",
+        "Disease Type":  "真菌性病害"
+    },
+    {
+        "Seq":  "372",
+        "Filename":  "微信图片_2026-06-03_135256_368",
+        "Crop":  "马铃薯",
+        "Disease":  "癌肿病",
+        "Disease Type":  "真菌性病害"
+    },
+    {
+        "Seq":  "373",
+        "Filename":  "微信图片_2026-06-03_135352_847",
+        "Crop":  "马铃薯",
+        "Disease":  "青枯病",
+        "Disease Type":  "细菌性病害"
+    },
+    {
+        "Seq":  "374",
+        "Filename":  "微信图片_2026-06-03_135623_584",
+        "Crop":  "马铃薯",
+        "Disease":  "苍痂病",
+        "Disease Type":  "细菌性病害"
+    },
+    {
+        "Seq":  "375",
+        "Filename":  "微信图片_2026-06-03_135725_126",
+        "Crop":  "马铃薯",
+        "Disease":  "早疫病",
+        "Disease Type":  "真菌性病害"
+    },
+    {
+        "Seq":  "376",
+        "Filename":  "微信图片_2026-06-03_135846_326",
+        "Crop":  "马铃薯",
+        "Disease":  "病毒病",
+        "Disease Type":  "非生理性病害"
+    },
+    {
+        "Seq":  "377",
+        "Filename":  "微信图片_2026-06-03_135949_447",
+        "Crop":  "杨梅",
+        "Disease":  "褐斑病",
+        "Disease Type":  "真菌性病害"
+    },
+    {
+        "Seq":  "378",
+        "Filename":  "微信图片_2026-06-03_140115_791",
+        "Crop":  "苹果",
+        "Disease":  "黑星病",
+        "Disease Type":  "真菌性病害"
+    },
+    {
+        "Seq":  "379",
+        "Filename":  "微信图片_2026-06-03_140155_615",
+        "Crop":  "苹果树",
+        "Disease":  "花腐病",
+        "Disease Type":  "真菌性病害"
+    },
+    {
+        "Seq":  "380",
+        "Filename":  "微信图片_2026-06-03_140612_807",
+        "Crop":  "樱桃",
+        "Disease":  "腐烂病",
+        "Disease Type":  "真菌性病害"
+    },
+    {
+        "Seq":  "381",
+        "Filename":  "微信图片_2026-06-03_140707_687",
+        "Crop":  "苹果树",
+        "Disease":  "缺铁",
+        "Disease Type":  "生理性病害"
+    },
+    {
+        "Seq":  "382",
+        "Filename":  "微信图片_2026-06-03_140914_911",
+        "Crop":  "猕猴桃",
+        "Disease":  "溃疡病",
+        "Disease Type":  "细菌性病害"
+    },
+    {
+        "Seq":  "383",
+        "Filename":  "微信图片_2026-06-03_141055_079",
+        "Crop":  "猕猴桃",
+        "Disease":  "膏药病",
+        "Disease Type":  "真菌性病害"
+    },
+    {
+        "Seq":  "384",
+        "Filename":  "微信图片_2026-06-03_141215_040",
+        "Crop":  "甘蔗",
+        "Disease":  "凤梨病",
+        "Disease Type":  "真菌性土传"
+    },
+    {
+        "Seq":  "385",
+        "Filename":  "微信图片_2026-06-03_141436_167",
+        "Crop":  "百香果",
+        "Disease":  "缺镁",
+        "Disease Type":  "生理性病害"
+    },
+    {
+        "Seq":  "386",
+        "Filename":  "微信图片_2026-06-03_141550_750",
+        "Crop":  "芒果",
+        "Disease":  "炭疽病",
+        "Disease Type":  "真菌性侵染病害"
+    },
+    {
+        "Seq":  "387",
+        "Filename":  "微信图片_2026-06-03_141859_087",
+        "Crop":  "烟草",
+        "Disease":  "黑胫病",
+        "Disease Type":  "真菌性病害"
+    },
+    {
+        "Seq":  "388",
+        "Filename":  "微信图片_2026-06-03_141919_758",
+        "Crop":  "烟草",
+        "Disease":  "赤星病",
+        "Disease Type":  "真菌性侵染病害"
+    },
+    {
+        "Seq":  "389",
+        "Filename":  "微信图片_2026-06-03_142023_366",
+        "Crop":  "烟草",
+        "Disease":  "病毒病",
+        "Disease Type":  "病毒性病害"
+    },
+    {
+        "Seq":  "390",
+        "Filename":  "微信图片_2026-06-03_142154_574",
+        "Crop":  "花生",
+        "Disease":  "赤星病",
+        "Disease Type":  "真菌性病害"
+    },
+    {
+        "Seq":  "391",
+        "Filename":  "微信图片_2026-06-03_142315_287",
+        "Crop":  "烟草",
+        "Disease":  "青枯病",
+        "Disease Type":  "细菌性病害"
+    },
+    {
+        "Seq":  "392",
+        "Filename":  "微信图片_2026-06-03_142345_198",
+        "Crop":  "烟草",
+        "Disease":  "蛙眼病",
+        "Disease Type":  "真菌性病害"
+    },
+    {
+        "Seq":  "393",
+        "Filename":  "微信图片_2026-06-03_142600_896",
+        "Crop":  "棉花",
+        "Disease":  "褐斑病",
+        "Disease Type":  "真菌性侵染病害"
+    },
+    {
+        "Seq":  "394",
+        "Filename":  "微信图片_2026-06-03_142637_870",
+        "Crop":  "棉花",
+        "Disease":  "黄萎病",
+        "Disease Type":  "真菌性病害"
+    },
+    {
+        "Seq":  "395",
+        "Filename":  "微信图片_2026-06-03_142732_024",
+        "Crop":  "棉花",
+        "Disease":  "炭疽病",
+        "Disease Type":  "真菌性病害"
+    },
+    {
+        "Seq":  "396",
+        "Filename":  "微信图片_2026-06-03_142910_167",
+        "Crop":  "向日葵",
+        "Disease":  "菌核病",
+        "Disease Type":  "真菌性土传侵染病害"
+    },
+    {
+        "Seq":  "397",
+        "Filename":  "微信图片_2026-06-03_143040_863",
+        "Crop":  "棉花",
+        "Disease":  "角斑病",
+        "Disease Type":  "细菌性病害"
+    },
+    {
+        "Seq":  "398",
+        "Filename":  "微信图片_2026-06-03_143248_278",
+        "Crop":  "茶",
+        "Disease":  "枯芽病",
+        "Disease Type":  "真菌性病害"
+    },
+    {
+        "Seq":  "399",
+        "Filename":  "微信图片_2026-06-03_143420_927",
+        "Crop":  "茶",
+        "Disease":  "炭疽病",
+        "Disease Type":  "真菌性侵染病害"
+    },
+    {
+        "Seq":  "400",
+        "Filename":  "微信图片_2026-06-03_143701_110",
+        "Crop":  "豆角",
+        "Disease":  "白粉病",
+        "Disease Type":  "真菌性病害"
+    },
+    {
+        "Seq":  "401",
+        "Filename":  "微信图片_2026-06-03_143759_223",
+        "Crop":  "豆角",
+        "Disease":  "病毒病",
+        "Disease Type":  "病毒性病害"
+    },
+    {
+        "Seq":  "402",
+        "Filename":  "微信图片_2026-06-02_164146_721",
+        "Crop":  "葡萄",
+        "Disease":  "煤污病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "403",
+        "Filename":  "微信图片_2026-06-02_164212_925",
+        "Crop":  "葡萄",
+        "Disease":  "煤污病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "404",
+        "Filename":  "微信图片_2026-06-02_164220_909",
+        "Crop":  "葡萄",
+        "Disease":  "煤污病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "405",
+        "Filename":  "微信图片_2026-06-02_164235_292",
+        "Crop":  "葡萄",
+        "Disease":  "煤污病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "406",
+        "Filename":  "微信图片_2026-06-02_164714_797",
+        "Crop":  "嘉宝果树",
+        "Disease":  "蓟马",
+        "Disease Type":  "虫害"
+    },
+    {
+        "Seq":  "407",
+        "Filename":  "微信图片_2026-06-02_164724_909",
+        "Crop":  "嘉宝果树",
+        "Disease":  "蓟马",
+        "Disease Type":  "虫害"
+    },
+    {
+        "Seq":  "408",
+        "Filename":  "微信图片_2026-06-02_164729_542",
+        "Crop":  "嘉宝果树",
+        "Disease":  "蓟马",
+        "Disease Type":  "虫害"
+    },
+    {
+        "Seq":  "409",
+        "Filename":  "微信图片_2026-06-02_164736_676",
+        "Crop":  "嘉宝果树",
+        "Disease":  "蓟马",
+        "Disease Type":  "虫害"
+    },
+    {
+        "Seq":  "410",
+        "Filename":  "微信图片_2026-06-02_164741_532",
+        "Crop":  "嘉宝果树",
+        "Disease":  "蓟马",
+        "Disease Type":  "虫害"
+    },
+    {
+        "Seq":  "411",
+        "Filename":  "微信图片_2026-06-02_165139_565",
+        "Crop":  "猕猴桃",
+        "Disease":  "溃疡病",
+        "Disease Type":  "细菌病害"
+    },
+    {
+        "Seq":  "412",
+        "Filename":  "微信图片_2026-06-02_165146_844",
+        "Crop":  "猕猴桃",
+        "Disease":  "溃疡病",
+        "Disease Type":  "细菌病害"
+    },
+    {
+        "Seq":  "413",
+        "Filename":  "微信图片_2026-06-02_165158_980",
+        "Crop":  "猕猴桃",
+        "Disease":  "溃疡病",
+        "Disease Type":  "细菌病害"
+    },
+    {
+        "Seq":  "414",
+        "Filename":  "微信图片_2026-06-02_165203_748",
+        "Crop":  "猕猴桃",
+        "Disease":  "溃疡病",
+        "Disease Type":  "细菌病害"
+    },
+    {
+        "Seq":  "415",
+        "Filename":  "微信图片_2026-06-02_165527_700",
+        "Crop":  "柑橘树",
+        "Disease":  "潜叶蛾",
+        "Disease Type":  "虫害"
+    },
+    {
+        "Seq":  "416",
+        "Filename":  "微信图片_2026-06-02_165532_228",
+        "Crop":  "柑橘树",
+        "Disease":  "潜叶蛾",
+        "Disease Type":  "虫害"
+    },
+    {
+        "Seq":  "417",
+        "Filename":  "微信图片_2026-06-02_165536_572",
+        "Crop":  "柑橘树",
+        "Disease":  "潜叶蛾",
+        "Disease Type":  "虫害"
+    },
+    {
+        "Seq":  "418",
+        "Filename":  "微信图片_2026-06-02_165540_269",
+        "Crop":  "柑橘树",
+        "Disease":  "潜叶蛾",
+        "Disease Type":  "虫害"
+    },
+    {
+        "Seq":  "419",
+        "Filename":  "微信图片_2026-06-02_165544_732",
+        "Crop":  "柑橘树",
+        "Disease":  "潜叶蛾",
+        "Disease Type":  "虫害"
+    },
+    {
+        "Seq":  "420",
+        "Filename":  "微信图片_2026-06-02_165548_900",
+        "Crop":  "柑橘树",
+        "Disease":  "潜叶蛾",
+        "Disease Type":  "虫害"
+    },
+    {
+        "Seq":  "421",
+        "Filename":  "微信图片_2026-06-02_170014_428",
+        "Crop":  "苹果树",
+        "Disease":  "花叶病",
+        "Disease Type":  "病毒性病害"
+    },
+    {
+        "Seq":  "422",
+        "Filename":  "微信图片_2026-06-02_170019_012",
+        "Crop":  "苹果树",
+        "Disease":  "花叶病",
+        "Disease Type":  "病毒性病害"
+    },
+    {
+        "Seq":  "423",
+        "Filename":  "微信图片_2026-06-02_170022_988",
+        "Crop":  "苹果树",
+        "Disease":  "花叶病",
+        "Disease Type":  "病毒性病害"
+    },
+    {
+        "Seq":  "424",
+        "Filename":  "微信图片_2026-06-02_170026_956",
+        "Crop":  "苹果树",
+        "Disease":  "花叶病",
+        "Disease Type":  "病毒性病害"
+    },
+    {
+        "Seq":  "425",
+        "Filename":  "微信图片_2026-06-02_170031_636",
+        "Crop":  "苹果树",
+        "Disease":  "花叶病",
+        "Disease Type":  "病毒性病害"
+    },
+    {
+        "Seq":  "426",
+        "Filename":  "微信图片_2026-06-02_170035_428",
+        "Crop":  "苹果树",
+        "Disease":  "花叶病",
+        "Disease Type":  "病毒性病害"
+    },
+    {
+        "Seq":  "427",
+        "Filename":  "微信图片_2026-06-02_170039_374",
+        "Crop":  "苹果树",
+        "Disease":  "花叶病",
+        "Disease Type":  "病毒性病害"
+    },
+    {
+        "Seq":  "428",
+        "Filename":  "微信图片_2026-06-02_170043_212",
+        "Crop":  "苹果树",
+        "Disease":  "花叶病",
+        "Disease Type":  "病毒性病害"
+    },
+    {
+        "Seq":  "429",
+        "Filename":  "微信图片_2026-06-02_170609_876",
+        "Crop":  "梨树",
+        "Disease":  "干腐病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "430",
+        "Filename":  "微信图片_2026-06-02_170624_227",
+        "Crop":  "梨树",
+        "Disease":  "干腐病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "431",
+        "Filename":  "微信图片_2026-06-02_170630_612",
+        "Crop":  "梨树",
+        "Disease":  "干腐病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "432",
+        "Filename":  "微信图片_2026-06-02_170634_804",
+        "Crop":  "梨树",
+        "Disease":  "干腐病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "433",
+        "Filename":  "微信图片_2026-06-02_170639_555",
+        "Crop":  "梨树",
+        "Disease":  "干腐病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "434",
+        "Filename":  "微信图片_2026-06-02_170643_643",
+        "Crop":  "梨树",
+        "Disease":  "干腐病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "435",
+        "Filename":  "微信图片_2026-06-02_170832_468",
+        "Crop":  "苹果树",
+        "Disease":  "红蜘蛛",
+        "Disease Type":  "虫害"
+    },
+    {
+        "Seq":  "436",
+        "Filename":  "微信图片_2026-06-02_170836_308",
+        "Crop":  "苹果树",
+        "Disease":  "红蜘蛛",
+        "Disease Type":  "虫害"
+    },
+    {
+        "Seq":  "437",
+        "Filename":  "微信图片_2026-06-02_171011_291",
+        "Crop":  "柿子树",
+        "Disease":  "黑斑病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "438",
+        "Filename":  "微信图片_2026-06-02_171019_579",
+        "Crop":  "柿子树",
+        "Disease":  "黑斑病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "439",
+        "Filename":  "微信图片_2026-06-02_171025_116",
+        "Crop":  "柿子树",
+        "Disease":  "黑斑病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "440",
+        "Filename":  "微信图片_2026-06-02_171330_595",
+        "Crop":  "苹果树",
+        "Disease":  "红蜘蛛",
+        "Disease Type":  "虫害"
+    },
+    {
+        "Seq":  "441",
+        "Filename":  "微信图片_2026-06-02_171337_787",
+        "Crop":  "苹果树",
+        "Disease":  "红蜘蛛",
+        "Disease Type":  "虫害"
+    },
+    {
+        "Seq":  "442",
+        "Filename":  "微信图片_2026-06-02_171342_163",
+        "Crop":  "苹果树",
+        "Disease":  "红蜘蛛",
+        "Disease Type":  "虫害"
+    },
+    {
+        "Seq":  "443",
+        "Filename":  "微信图片_2026-06-02_172516_442",
+        "Crop":  "嘉宝果树",
+        "Disease":  "炭疽病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "444",
+        "Filename":  "微信图片_2026-06-02_172524_307",
+        "Crop":  "嘉宝果树",
+        "Disease":  "炭疽病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "445",
+        "Filename":  "微信图片_2026-06-02_172530_578",
+        "Crop":  "嘉宝果树",
+        "Disease":  "炭疽病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "446",
+        "Filename":  "微信图片_2026-06-02_172752_019",
+        "Crop":  "柑橘树",
+        "Disease":  "炭疽病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "447",
+        "Filename":  "微信图片_2026-06-02_172756_211",
+        "Crop":  "柑橘树",
+        "Disease":  "炭疽病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "448",
+        "Filename":  "微信图片_2026-06-02_172915_610",
+        "Crop":  "苹果树",
+        "Disease":  "螨虫",
+        "Disease Type":  "虫害"
+    },
+    {
+        "Seq":  "449",
+        "Filename":  "微信图片_2026-06-02_172919_978",
+        "Crop":  "苹果树",
+        "Disease":  "螨虫",
+        "Disease Type":  "虫害"
+    },
+    {
+        "Seq":  "450",
+        "Filename":  "微信图片_2026-06-02_172923_354",
+        "Crop":  "苹果树",
+        "Disease":  "螨虫",
+        "Disease Type":  "虫害"
+    },
+    {
+        "Seq":  "451",
+        "Filename":  "微信图片_2026-06-02_173141_627",
+        "Crop":  "芒果树",
+        "Disease":  "炭疽病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "452",
+        "Filename":  "微信图片_2026-06-02_173145_938",
+        "Crop":  "芒果树",
+        "Disease":  "炭疽病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "453",
+        "Filename":  "微信图片_2026-06-02_173149_905",
+        "Crop":  "芒果树",
+        "Disease":  "炭疽病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "454",
+        "Filename":  "微信图片_2026-06-02_173153_674",
+        "Crop":  "芒果树",
+        "Disease":  "炭疽病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "455",
+        "Filename":  "微信图片_2026-06-02_173157_666",
+        "Crop":  "芒果树",
+        "Disease":  "炭疽病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "456",
+        "Filename":  "微信图片_2026-06-02_173314_185",
+        "Crop":  "牛油果树",
+        "Disease":  "褐斑病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "457",
+        "Filename":  "微信图片_2026-06-02_173318_298",
+        "Crop":  "牛油果树",
+        "Disease":  "褐斑病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "458",
+        "Filename":  "微信图片_2026-06-02_173321_953",
+        "Crop":  "牛油果树",
+        "Disease":  "褐斑病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "459",
+        "Filename":  "微信图片_2026-06-02_173326_259",
+        "Crop":  "牛油果树",
+        "Disease":  "褐斑病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "460",
+        "Filename":  "微信图片_2026-06-02_173639_882",
+        "Crop":  "苹果树",
+        "Disease":  "腐烂病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "461",
+        "Filename":  "微信图片_2026-06-02_173643_841",
+        "Crop":  "苹果树",
+        "Disease":  "腐烂病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "462",
+        "Filename":  "微信图片_2026-06-02_173647_849",
+        "Crop":  "苹果树",
+        "Disease":  "腐烂病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "463",
+        "Filename":  "微信图片_2026-06-02_174326_297",
+        "Crop":  "芒果树",
+        "Disease":  "炭疽病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "464",
+        "Filename":  "微信图片_2026-06-02_174331_680",
+        "Crop":  "芒果树",
+        "Disease":  "炭疽病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "465",
+        "Filename":  "微信图片_2026-06-02_174336_249",
+        "Crop":  "芒果树",
+        "Disease":  "炭疽病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "466",
+        "Filename":  "微信图片_2026-06-02_174753_264",
+        "Crop":  "苹果树",
+        "Disease":  "锈病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "467",
+        "Filename":  "微信图片_2026-06-02_174808_881",
+        "Crop":  "苹果树",
+        "Disease":  "锈病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "468",
+        "Filename":  "微信图片_2026-06-02_174814_073",
+        "Crop":  "苹果树",
+        "Disease":  "锈病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "469",
+        "Filename":  "微信图片_2026-06-02_174819_026",
+        "Crop":  "苹果树",
+        "Disease":  "锈病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "470",
+        "Filename":  "微信图片_2026-06-02_175418_257",
+        "Crop":  "人参果树",
+        "Disease":  "炭疽病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "471",
+        "Filename":  "微信图片_2026-06-02_175422_144",
+        "Crop":  "人参果树",
+        "Disease":  "炭疽病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "472",
+        "Filename":  "微信图片_2026-06-02_175426_664",
+        "Crop":  "人参果树",
+        "Disease":  "炭疽病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "473",
+        "Filename":  "微信图片_2026-06-03_162606_277",
+        "Crop":  "桃树",
+        "Disease":  "穿孔病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "474",
+        "Filename":  "微信图片_2026-06-03_162610_645",
+        "Crop":  "桃树",
+        "Disease":  "穿孔病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "475",
+        "Filename":  "微信图片_2026-06-03_162744_108",
+        "Crop":  "桃树",
+        "Disease":  "穿孔病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "476",
+        "Filename":  "微信图片_2026-06-03_162754_164",
+        "Crop":  "桃树",
+        "Disease":  "穿孔病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "477",
+        "Filename":  "微信图片_2026-06-03_162758_773",
+        "Crop":  "桃树",
+        "Disease":  "穿孔病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "478",
+        "Filename":  "微信图片_2026-06-03_162803_796",
+        "Crop":  "桃树",
+        "Disease":  "穿孔病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "479",
+        "Filename":  "微信图片_2026-06-03_162910_709",
+        "Crop":  "桃树",
+        "Disease":  "穿孔病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "480",
+        "Filename":  "微信图片_2026-06-03_162915_077",
+        "Crop":  "桃树",
+        "Disease":  "穿孔病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "481",
+        "Filename":  "微信图片_2026-06-03_162918_797",
+        "Crop":  "桃树",
+        "Disease":  "穿孔病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "482",
+        "Filename":  "微信图片_2026-06-03_162923_596",
+        "Crop":  "桃树",
+        "Disease":  "穿孔病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "483",
+        "Filename":  "微信图片_2026-06-03_163049_900",
+        "Crop":  "梨树",
+        "Disease":  "锈病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "484",
+        "Filename":  "微信图片_2026-06-03_163053_765",
+        "Crop":  "梨树",
+        "Disease":  "锈病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "485",
+        "Filename":  "微信图片_2026-06-03_163058_244",
+        "Crop":  "梨树",
+        "Disease":  "锈病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "486",
+        "Filename":  "微信图片_2026-06-03_163102_212",
+        "Crop":  "梨树",
+        "Disease":  "锈病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "487",
+        "Filename":  "微信图片_2026-06-03_163106_797",
+        "Crop":  "梨树",
+        "Disease":  "锈病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "488",
+        "Filename":  "微信图片_2026-06-03_163110_789",
+        "Crop":  "梨树",
+        "Disease":  "锈病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "489",
+        "Filename":  "微信图片_2026-06-03_163238_860",
+        "Crop":  "梨树",
+        "Disease":  "白粉病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "490",
+        "Filename":  "微信图片_2026-06-03_163243_236",
+        "Crop":  "梨树",
+        "Disease":  "白粉病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "491",
+        "Filename":  "微信图片_2026-06-03_163247_116",
+        "Crop":  "梨树",
+        "Disease":  "白粉病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "492",
+        "Filename":  "微信图片_2026-06-03_163251_540",
+        "Crop":  "梨树",
+        "Disease":  "白粉病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "493",
+        "Filename":  "微信图片_2026-06-03_163256_180",
+        "Crop":  "梨树",
+        "Disease":  "白粉病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "494",
+        "Filename":  "微信图片_2026-06-03_163300_357",
+        "Crop":  "梨树",
+        "Disease":  "白粉病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "495",
+        "Filename":  "微信图片_2026-06-03_163419_356",
+        "Crop":  "梨树",
+        "Disease":  "梨赤星病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "496",
+        "Filename":  "微信图片_2026-06-03_163423_164",
+        "Crop":  "梨树",
+        "Disease":  "梨赤星病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "497",
+        "Filename":  "微信图片_2026-06-03_163426_932",
+        "Crop":  "梨树",
+        "Disease":  "梨赤星病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "498",
+        "Filename":  "微信图片_2026-06-03_163431_220",
+        "Crop":  "梨树",
+        "Disease":  "梨赤星病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "499",
+        "Filename":  "微信图片_2026-06-03_163435_452",
+        "Crop":  "梨树",
+        "Disease":  "梨赤星病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "500",
+        "Filename":  "微信图片_2026-06-03_163439_253",
+        "Crop":  "梨树",
+        "Disease":  "梨赤星病",
+        "Disease Type":  "真菌病害"
+    },
+    {
+        "Seq":  "501",
+        "Filename":  "微信图片_2026-06-03_163443_877",
+        "Crop":  "梨树",
+        "Disease":  "梨赤星病",
+        "Disease Type":  "真菌病害"
+    }
+]
