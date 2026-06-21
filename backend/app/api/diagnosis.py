@@ -6,13 +6,16 @@ from sqlalchemy.orm import Session
 
 from app.core.config import settings
 from app.db.session import get_db
-from app.models import CropType, DiagnosisResult, Disease, ImageUpload, ProductRecommendation, User
-from app.schemas.diagnosis import DiagnosisHistoryItem, DiagnosisOut
+from app.models import DiagnosisResult, ImageUpload, ProductRecommendation, User
+from app.schemas.diagnosis import DiagnosisHistoryItem, DiagnosisOut, ProductRecommendationOut
 from app.services.ai_service import diagnose_crop_image
 from app.services.auth_service import get_current_user
-from app.services.rag_service import build_knowledge_context, retrieve_knowledge
 from app.services.recommendation_service import create_product_recommendations
-from app.services.treatment_service import refine_treatment
+from app.services.treatment_service import (
+    build_database_diagnosis,
+    knowledge_for_disease,
+    match_database_disease,
+)
 
 router = APIRouter()
 ALLOWED_TYPES = {"image/jpeg", "image/png"}
@@ -27,73 +30,84 @@ async def create_diagnosis(
     if image.content_type not in ALLOWED_TYPES:
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Only JPG and PNG files are supported")
 
-    Path(settings.upload_dir).mkdir(parents=True, exist_ok=True)
-    extension = ".png" if image.content_type == "image/png" else ".jpg"
-    filename = f"{uuid4().hex}{extension}"
-    file_path = Path(settings.upload_dir) / filename
-    file_path.write_bytes(await image.read())
-
-    upload = ImageUpload(
-        user_id=user.id,
-        filename=image.filename or filename,
-        content_type=image.content_type,
-        file_path=str(file_path),
-    )
-    db.add(upload)
-    db.commit()
-    db.refresh(upload)
+    upload = await _save_upload(db, user, image)
 
     try:
-        diagnosis_data = diagnose_crop_image(str(file_path), image.content_type, "No crop or disease has been detected yet.")
+        classifier_data = diagnose_crop_image(
+            upload.file_path,
+            image.content_type,
+            "No treatment or product knowledge is provided. Identify only crop, disease, symptoms, confidence, and tags.",
+        )
     except RuntimeError as exc:
-        raise HTTPException(status_code=status.HTTP_503_SERVICE_UNAVAILABLE, detail=str(exc)) from exc
+        print("Groq diagnosis unavailable; continuing with database fallback:", str(exc), flush=True)
+        classifier_data = _unknown_classifier_data()
 
-    tags = diagnosis_data.pop("tags", [])
+    tags = classifier_data.pop("tags", [])
+    detected_crop = classifier_data.get("crop_type", "Unknown")
+    detected_disease = classifier_data.get("disease_name", "Unknown")
+    detected_symptoms = classifier_data.get("symptoms", "")
+    matched_disease, normalized_disease, fuzzy_match_score = match_database_disease(
+        db,
+        detected_crop,
+        detected_disease,
+        detected_symptoms,
+        tags,
+    )
+
     print(
-        "Initial diagnosis detected:",
+        "Database disease matching:",
         {
-            "crop": diagnosis_data["crop_type"],
-            "disease": diagnosis_data["disease_name"],
-            "confidence": diagnosis_data["confidence"],
-            "symptoms": diagnosis_data["symptoms"],
+            "groq_disease": detected_disease,
+            "groq_confidence": classifier_data.get("confidence"),
+            "detected_crop": detected_crop,
+            "detected_disease": detected_disease,
+            "normalized_disease": normalized_disease,
+            "fuzzy_match_score": fuzzy_match_score,
+            "matched_database_disease": matched_disease.name if matched_disease else None,
+            "confidence": classifier_data.get("confidence"),
+            "symptoms": detected_symptoms,
             "tags": tags,
+            "fallback_symptoms": detected_symptoms,
+            "fallback_tags": tags,
         },
         flush=True,
     )
-    entries = retrieve_knowledge(
-        db,
-        diagnosis_data["crop_type"],
-        diagnosis_data["disease_name"],
-        diagnosis_data["symptoms"],
-        tags,
-    )
-    try:
-        diagnosis_data = diagnose_crop_image(str(file_path), image.content_type, build_knowledge_context(entries))
-    except RuntimeError as exc:
-        raise HTTPException(status_code=status.HTTP_503_SERVICE_UNAVAILABLE, detail=str(exc)) from exc
-    tags = diagnosis_data.pop("tags", tags)
-    entries = retrieve_knowledge(
-        db,
-        diagnosis_data["crop_type"],
-        diagnosis_data["disease_name"],
-        diagnosis_data["symptoms"],
-        tags,
-    )
-    disease = _find_disease(db, diagnosis_data["crop_type"], diagnosis_data["disease_name"])
-    diagnosis_data["tags"] = tags
-    diagnosis_data = refine_treatment(diagnosis_data, disease, entries)
-    diagnosis_data.pop("tags", None)
 
-    diagnosis = DiagnosisResult(
-        user_id=user.id,
-        image_upload_id=upload.id,
-        **diagnosis_data,
+    entries = knowledge_for_disease(db, matched_disease)
+    print(
+        "Database knowledge entries:",
+        [{"id": entry.id, "title": entry.title, "disease": entry.disease.name} for entry in entries],
+        flush=True,
     )
+
+    diagnosis_data = build_database_diagnosis(classifier_data, matched_disease, entries)
+    diagnosis = DiagnosisResult(user_id=user.id, image_upload_id=upload.id, **diagnosis_data)
     db.add(diagnosis)
     db.commit()
     db.refresh(diagnosis)
 
-    create_product_recommendations(db, diagnosis.id, diagnosis.crop_type, diagnosis.disease_name, diagnosis.symptoms, tags)
+    recommendations = create_product_recommendations(db, diagnosis, tags)
+    products_created_count = (
+        db.query(ProductRecommendation)
+        .filter(ProductRecommendation.diagnosis_id == diagnosis.id)
+        .count()
+    )
+    print(
+        "Diagnosis recommendation summary:",
+        {
+            "diagnosis_id": diagnosis.id,
+            "detected_crop": detected_crop,
+            "detected_disease": detected_disease,
+            "normalized_disease": normalized_disease,
+            "fuzzy_match_score": fuzzy_match_score,
+            "matched_database_disease": matched_disease.name if matched_disease else None,
+            "matched_disease": matched_disease.name if matched_disease else None,
+            "fallback_used": matched_disease is None,
+            "matched_products_count": len(recommendations),
+            "products_created_count": products_created_count,
+        },
+        flush=True,
+    )
     return _diagnosis_out(db, diagnosis)
 
 
@@ -131,12 +145,58 @@ def get_diagnosis(
     return _diagnosis_out(db, diagnosis)
 
 
+async def _save_upload(db: Session, user: User, image: UploadFile) -> ImageUpload:
+    Path(settings.upload_dir).mkdir(parents=True, exist_ok=True)
+    extension = ".png" if image.content_type == "image/png" else ".jpg"
+    filename = f"{uuid4().hex}{extension}"
+    file_path = Path(settings.upload_dir) / filename
+    file_path.write_bytes(await image.read())
+
+    upload = ImageUpload(
+        user_id=user.id,
+        filename=image.filename or filename,
+        content_type=image.content_type,
+        file_path=str(file_path),
+    )
+    db.add(upload)
+    db.commit()
+    db.refresh(upload)
+    return upload
+
+
+def _unknown_classifier_data() -> dict:
+    return {
+        "crop_type": "Unknown",
+        "disease_name": "Unknown",
+        "confidence": "Low",
+        "severity": "Unknown",
+        "description": "Unknown",
+        "causes": "Unknown",
+        "symptoms": "Unknown",
+        "impact": "Unknown",
+        "treatment_steps": "Unknown",
+        "preventive_actions": "Unknown",
+        "environmental_considerations": "Unknown",
+        "tags": [],
+    }
+
+
 def _diagnosis_out(db: Session, diagnosis: DiagnosisResult) -> DiagnosisOut:
-    recommendations = (
+    recommendation_rows = (
         db.query(ProductRecommendation)
         .filter(ProductRecommendation.diagnosis_id == diagnosis.id)
         .all()
     )
+    recommendations = [
+        ProductRecommendationOut(
+            id=item.id,
+            product=item.product,
+            reason=item.reason,
+            usage_note=item.usage_note,
+            safety_note=item.product.safety_notes,
+        )
+        for item in recommendation_rows
+    ]
     return DiagnosisOut(
         id=diagnosis.id,
         crop_type=diagnosis.crop_type,
@@ -154,15 +214,3 @@ def _diagnosis_out(db: Session, diagnosis: DiagnosisResult) -> DiagnosisOut:
         image_url=f"/uploads/{Path(diagnosis.image_upload.file_path).name}",
         recommendations=recommendations,
     )
-
-
-def _find_disease(db: Session, crop_type: str, disease_name: str) -> Disease | None:
-    if not crop_type or not disease_name or crop_type == "Unknown" or disease_name == "Unknown":
-        return None
-    disease = (
-        db.query(Disease)
-        .join(Disease.crop_type)
-        .filter(Disease.name.ilike(f"%{disease_name}%"), CropType.name.ilike(crop_type))
-        .first()
-    )
-    return disease or db.query(Disease).filter(Disease.name.ilike(f"%{disease_name}%")).first()

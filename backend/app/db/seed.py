@@ -39,8 +39,14 @@ def _seed_users(db: Session) -> None:
         User(name="System Admin", email="admin@cropkeepai.local", password_hash=hash_password("password123"), role=UserRole.admin),
     ]
     for user in users:
-        if not db.query(User).filter(User.email == user.email).first():
+        existing = db.query(User).filter(User.email == user.email).first()
+        if not existing:
+            user.is_active = True
             db.add(user)
+        else:
+            existing.is_active = True
+            if user.email == "admin@cropkeepai.local":
+                existing.role = UserRole.admin
 
 
 def _seed_diseases(db: Session) -> dict[str, Disease]:

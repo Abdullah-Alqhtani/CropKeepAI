@@ -1,14 +1,11 @@
 import { useState } from 'react';
-import { Leaf, LogIn, Moon, Sun, UserPlus } from 'lucide-react';
+import { Leaf, LogIn, Moon, Sun } from 'lucide-react';
 import { api } from '../services/api.js';
 
 export function AuthPage({ onAuth, theme, setTheme }) {
-  const [mode, setMode] = useState('login');
   const [form, setForm] = useState({
-    name: '',
-    email: 'farmer@cropkeepai.local',
+    email: 'admin@cropkeepai.local',
     password: 'password123',
-    role: 'farmer',
   });
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
@@ -18,11 +15,7 @@ export function AuthPage({ onAuth, theme, setTheme }) {
     setError('');
     setLoading(true);
     try {
-      const payload =
-        mode === 'login'
-          ? { email: form.email, password: form.password }
-          : { name: form.name, email: form.email, password: form.password, role: form.role };
-      const auth = mode === 'login' ? await api.login(payload) : await api.register(payload);
+      const auth = await api.login({ email: form.email, password: form.password });
       onAuth(auth);
     } catch (err) {
       setError(err.message);
@@ -49,21 +42,7 @@ export function AuthPage({ onAuth, theme, setTheme }) {
             <p>Diagnose crop disease, retrieve treatment knowledge, and recommend crop protection products.</p>
           </div>
         </div>
-        <div className="mode-switch" role="tablist">
-          <button className={mode === 'login' ? 'active' : ''} onClick={() => setMode('login')} type="button">
-            <LogIn size={16} /> Login
-          </button>
-          <button className={mode === 'register' ? 'active' : ''} onClick={() => setMode('register')} type="button">
-            <UserPlus size={16} /> Register
-          </button>
-        </div>
         <form onSubmit={submit} className="form-grid">
-          {mode === 'register' && (
-            <label>
-              Name
-              <input value={form.name} onChange={(event) => setForm({ ...form, name: event.target.value })} required />
-            </label>
-          )}
           <label>
             Email
             <input
@@ -82,19 +61,10 @@ export function AuthPage({ onAuth, theme, setTheme }) {
               required
             />
           </label>
-          {mode === 'register' && (
-            <label>
-              Role
-              <select value={form.role} onChange={(event) => setForm({ ...form, role: event.target.value })}>
-                <option value="farmer">Farmer</option>
-                <option value="expert">Expert</option>
-                <option value="admin">Admin</option>
-              </select>
-            </label>
-          )}
           {error && <div className="error-text">{error}</div>}
           <button className="primary-button" disabled={loading}>
-            {loading ? 'Working...' : mode === 'login' ? 'Login' : 'Create account'}
+            <LogIn size={16} />
+            {loading ? 'Working...' : 'Login'}
           </button>
         </form>
       </section>

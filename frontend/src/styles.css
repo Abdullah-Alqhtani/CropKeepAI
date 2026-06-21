@@ -235,6 +235,14 @@ select:focus {
   border-radius: 8px;
 }
 
+.success-text {
+  color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 12%, var(--surface));
+  border: 1px solid color-mix(in srgb, var(--accent) 35%, var(--border));
+  padding: 10px 12px;
+  border-radius: 8px;
+}
+
 .app-shell {
   min-height: 100vh;
 }
@@ -668,6 +676,66 @@ select:focus {
   margin: 0;
 }
 
+.admin-panel {
+  display: grid;
+  gap: 16px;
+}
+
+.admin-create-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(150px, 1fr)) auto;
+  gap: 12px;
+  align-items: end;
+}
+
+.user-list {
+  display: grid;
+  gap: 10px;
+}
+
+.user-row {
+  display: grid;
+  grid-template-columns: minmax(220px, 1.2fr) minmax(120px, 160px) minmax(220px, 1fr) auto;
+  gap: 12px;
+  align-items: center;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px;
+  background: var(--surface-2);
+}
+
+.user-row strong,
+.user-row span,
+.user-row small {
+  display: block;
+}
+
+.user-row span,
+.user-row small {
+  color: var(--muted);
+}
+
+.user-row small {
+  margin-top: 4px;
+  font-weight: 750;
+}
+
+.password-reset,
+.row-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.password-reset input {
+  min-width: 0;
+  width: 100%;
+}
+
+.danger-button {
+  color: var(--danger);
+}
+
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -703,8 +771,15 @@ select:focus {
 
   .diagnosis-grid,
   .info-grid,
-  .stat-grid {
+  .stat-grid,
+  .admin-create-grid,
+  .user-row {
     grid-template-columns: 1fr;
+  }
+
+  .password-reset,
+  .row-actions {
+    justify-content: stretch;
   }
 
   .result-header {

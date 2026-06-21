@@ -13,7 +13,7 @@ oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/api/auth/login")
 
 def authenticate_user(db: Session, email: str, password: str) -> User | None:
     user = db.query(User).filter(User.email == email).first()
-    if not user or not verify_password(password, user.password_hash):
+    if not user or not user.is_active or not verify_password(password, user.password_hash):
         return None
     return user
 
@@ -32,7 +32,7 @@ def get_current_user(token: str = Depends(oauth2_scheme), db: Session = Depends(
     if not email:
         raise credentials_error
     user = db.query(User).filter(User.email == email).first()
-    if not user:
+    if not user or not user.is_active:
         raise credentials_error
     return user
 

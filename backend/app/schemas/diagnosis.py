@@ -24,8 +24,12 @@ class ProductOut(BaseModel):
 
 class ProductRecommendationOut(BaseModel):
     id: int
-    score: float
+    product_id: int | None = None
+    product_name: str | None = None
+    score: float | None = None
     reason: str
+    usage_note: str
+    safety_note: str
     product: ProductOut
 
     class Config:

@@ -2,6 +2,9 @@ import { AlertTriangle, FlaskConical, Leaf, ShieldCheck } from 'lucide-react';
 import { getAssetUrl } from '../services/api.js';
 
 export function ResultPanel({ diagnosis }) {
+  const recommendations = diagnosis.recommendations || [];
+  const productEmptyMessage = 'No suitable product from our catalog was found for this diagnosis.';
+
   return (
     <section className="panel result-panel">
       <div className="result-header">
@@ -19,8 +22,8 @@ export function ResultPanel({ diagnosis }) {
 
       <div className="info-grid">
         <InfoBlock icon={<Leaf size={18} />} title="Description" text={diagnosis.description} />
-        <InfoBlock icon={<AlertTriangle size={18} />} title="Causes" text={diagnosis.causes} />
-        <InfoBlock icon={<ShieldCheck size={18} />} title="Symptoms & Impact" text={`${diagnosis.symptoms}\n${diagnosis.impact}`} />
+        {diagnosis.causes !== 'Unknown' && <InfoBlock icon={<AlertTriangle size={18} />} title="Causes" text={diagnosis.causes} />}
+        <InfoBlock icon={<ShieldCheck size={18} />} title="Symptoms & Impact" text={diagnosis.impact !== 'Unknown' ? `${diagnosis.symptoms}\n${diagnosis.impact}` : diagnosis.symptoms} />
         <InfoBlock icon={<FlaskConical size={18} />} title="Treatment" text={diagnosis.treatment_steps} />
         <InfoBlock icon={<ShieldCheck size={18} />} title="Prevention" text={diagnosis.preventive_actions} />
         <InfoBlock icon={<Leaf size={18} />} title="Environment" text={diagnosis.environmental_considerations} />
@@ -29,17 +32,18 @@ export function ResultPanel({ diagnosis }) {
       <div className="recommendations">
         <h3>Product Suggestions</h3>
         <div className="product-list">
-          {diagnosis.recommendations.length > 0 ? (
-            diagnosis.recommendations.map((item) => (
+          {recommendations.length > 0 ? (
+            recommendations.map((item) => (
               <article className="product-item" key={item.id}>
-                <strong>{item.product.name}</strong>
+                <strong>{item.product_name || item.product.name}</strong>
                 <span>{item.product.active_ingredient}</span>
                 <p>{item.reason}</p>
-                <small>{item.product.safety_notes}</small>
+                <small>{item.usage_note}</small>
+                <small>{item.safety_note}</small>
               </article>
             ))
           ) : (
-            <p className="empty-note">No specific product recommendation found for this diagnosis.</p>
+            <p className="empty-note">{productEmptyMessage}</p>
           )}
         </div>
       </div>

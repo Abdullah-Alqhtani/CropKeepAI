@@ -21,6 +21,7 @@ class User(Base):
     email: Mapped[str] = mapped_column(String(255), unique=True, index=True)
     password_hash: Mapped[str] = mapped_column(String(255))
     role: Mapped[UserRole] = mapped_column(SAEnum(UserRole), default=UserRole.farmer)
+    is_active: Mapped[bool] = mapped_column(default=True)
     created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
 
 
@@ -131,6 +132,10 @@ class ProductRecommendation(Base):
     reason: Mapped[str] = mapped_column(Text)
 
     product: Mapped[Product] = relationship()
+
+    @property
+    def usage_note(self) -> str:
+        return self.product.usage_instructions if self.product else ""
 
 
 class DatasetImage(Base):

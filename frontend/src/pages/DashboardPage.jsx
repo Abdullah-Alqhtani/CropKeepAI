@@ -1,11 +1,12 @@
 import { useEffect, useState } from 'react';
-import { BookOpen, Database, History, ImageUp, LayoutDashboard, MessageSquare, PackageSearch } from 'lucide-react';
+import { BookOpen, Database, History, ImageUp, LayoutDashboard, MessageSquare, PackageSearch, UserCog } from 'lucide-react';
 import { api } from '../services/api.js';
 import { UploadPanel } from '../components/UploadPanel.jsx';
 import { ResultPanel } from '../components/ResultPanel.jsx';
 import { ChatPanel } from '../components/ChatPanel.jsx';
 import { CatalogPanel } from '../components/CatalogPanel.jsx';
 import { HistoryPanel } from '../components/HistoryPanel.jsx';
+import { UserManagementPanel } from '../components/UserManagementPanel.jsx';
 
 export function DashboardPage({ user, menuOpen, onCloseMenu, menuCloseIcon }) {
   const [activeTab, setActiveTab] = useState('dashboard');
@@ -33,6 +34,7 @@ export function DashboardPage({ user, menuOpen, onCloseMenu, menuCloseIcon }) {
   }
 
   const canReviewKnowledge = user.role === 'admin' || user.role === 'expert';
+  const canManageUsers = user.role === 'admin';
   const navItems = [
     { id: 'dashboard', label: 'Dashboard', icon: <LayoutDashboard size={18} /> },
     { id: 'diagnose', label: 'Diagnosis', icon: <ImageUp size={18} /> },
@@ -42,6 +44,9 @@ export function DashboardPage({ user, menuOpen, onCloseMenu, menuCloseIcon }) {
   ];
   if (canReviewKnowledge) {
     navItems.push({ id: 'knowledge', label: 'Knowledge', icon: <Database size={18} /> });
+  }
+  if (canManageUsers) {
+    navItems.push({ id: 'users', label: 'User Management', icon: <UserCog size={18} /> });
   }
 
   function chooseTab(id) {
@@ -121,6 +126,7 @@ export function DashboardPage({ user, menuOpen, onCloseMenu, menuCloseIcon }) {
       {activeTab === 'history' && <HistoryPanel history={history} onSelect={loadDiagnosis} />}
       {activeTab === 'products' && <CatalogPanel type="products" />}
       {activeTab === 'knowledge' && canReviewKnowledge && <CatalogPanel type="knowledge" />}
+      {activeTab === 'users' && canManageUsers && <UserManagementPanel currentUser={user} />}
     </main>
     </>
   );

@@ -42,19 +42,16 @@ Use exactly this JSON shape:
   "crop": "string",
   "disease": "string",
   "confidence": "Low | Medium | High",
-  "description": "string",
   "symptoms": ["string"],
-  "tags": ["string"],
-  "treatment": ["string"],
-  "prevention": ["string"]
+  "tags": ["string"]
 }}
 
 Rules:
-- Analyze the uploaded plant/crop image.
-- Use the retrieved knowledge where relevant, but do not force a disease from the knowledge if the image does not support it.
+- Analyze the uploaded plant/crop image and identify only the crop, disease, visible symptoms, and evidence tags.
+- Do not generate treatment, prevention, product, chemical, or management recommendations.
+- Do not use retrieved knowledge to invent a disease if the image does not support it.
 - If the image is unclear or you are unsure, still return valid JSON.
 - If unsure, set "crop" or "disease" to "Unknown" and "confidence" to "Low".
-- If unsure, keep treatment and prevention generic and do not name a disease-specific pesticide.
 - Tags must describe visible crop/disease/symptom evidence from this image, such as crop name, lesion type, mildew, rust, blight, spots, yellowing, or wilting.
 - Keep every array as an array of strings, even if there is only one item.
 - Never return diagnosis text outside the JSON object.
@@ -119,6 +116,55 @@ Question:
     return _message_content(response)
 
 
+def select_products_from_catalog(diagnosis: dict, products: list[dict], limit: int = 5) -> list[dict]:
+    if not _groq_api_key():
+        raise RuntimeError("GROQ_API_KEY is not configured.")
+
+    prompt = f"""
+You are CropKeepAI's product selector.
+
+Return ONLY valid JSON. Do not include markdown, code fences, comments, prose, or any
+text before or after the JSON object.
+
+Use exactly this JSON shape:
+{{
+  "recommendations": [
+    {{
+      "product_id": 123,
+      "reason": "string",
+      "usage_note": "string",
+      "safety_note": "string"
+    }}
+  ],
+  "message": "string"
+}}
+
+Rules:
+- Choose products ONLY from the provided product list by product_id.
+- Do not invent product names, product IDs, active ingredients, usage, or safety notes.
+- Select at most {limit} products.
+- If no product is suitable, return "recommendations": [] and a concise user-friendly message.
+- Prefer products whose target diseases, crops, tags, active ingredient, and usage match the diagnosis.
+- Do not recommend disease-specific products when the diagnosis disease is Unknown.
+
+Diagnosis:
+{json.dumps(diagnosis, ensure_ascii=False)}
+
+Available products:
+{json.dumps(products, ensure_ascii=False)}
+"""
+    response = _client().chat.completions.create(
+        model=settings.groq_text_model,
+        messages=[{"role": "user", "content": prompt}],
+        temperature=0,
+    )
+    payload = json.loads(_extract_json_text(_message_content(response)))
+    recommendations = payload.get("recommendations", [])
+    if not isinstance(recommendations, list):
+        return []
+    return recommendations[:limit]
+
+
 def _message_content(response) -> str:
     message = response.choices[0].message
     content = message.content
@@ -141,13 +187,13 @@ def _parse_diagnosis_json(text: str) -> dict:
         "disease_name": normalized["disease"],
         "confidence": normalized["confidence"],
         "severity": "Unknown",
-        "description": normalized["description"],
+        "description": "Unknown",
         "causes": "Unknown",
         "symptoms": "\n".join(normalized["symptoms"]),
         "tags": normalized["tags"],
         "impact": "Unknown",
-        "treatment_steps": "\n".join(normalized["treatment"]),
-        "preventive_actions": "\n".join(normalized["prevention"]),
+        "treatment_steps": "Unknown",
+        "preventive_actions": "Unknown",
         "environmental_considerations": "Follow local weather, label, and safety guidance.",
     }
 
@@ -181,11 +227,8 @@ def _normalize_required_shape(data: dict) -> dict:
         "crop": _string_value(data.get("crop")),
         "disease": _string_value(data.get("disease")),
         "confidence": confidence,
-        "description": _string_value(data.get("description")),
         "symptoms": _string_list(data.get("symptoms")),
         "tags": _string_list(data.get("tags")),
-        "treatment": _string_list(data.get("treatment")),
-        "prevention": _string_list(data.get("prevention")),
     }
 
 

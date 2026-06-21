@@ -31,13 +31,27 @@ export const api = {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(payload),
     }),
-  register: (payload) =>
-    request('/api/auth/register', {
+  me: () => request('/api/auth/me'),
+  users: () => request('/api/auth/users'),
+  createUser: (payload) =>
+    request('/api/auth/users', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(payload),
     }),
-  me: () => request('/api/auth/me'),
+  updateUser: (id, payload) =>
+    request(`/api/auth/users/${id}`, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+    }),
+  resetUserPassword: (id, password) =>
+    request(`/api/auth/users/${id}/reset-password`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ password }),
+    }),
+  deleteUser: (id) => request(`/api/auth/users/${id}`, { method: 'DELETE' }),
   diagnose: (file) => {
     const form = new FormData();
     form.append('image', file);

@@ -5,6 +5,7 @@ from app.db.session import engine
 
 def ensure_schema() -> None:
     statements = [
+        "ALTER TABLE users ADD COLUMN IF NOT EXISTS is_active BOOLEAN NOT NULL DEFAULT TRUE",
         "ALTER TABLE products ADD COLUMN IF NOT EXISTS product_code VARCHAR(80)",
         "ALTER TABLE products ADD COLUMN IF NOT EXISTS english_name VARCHAR(180)",
         "ALTER TABLE products ADD COLUMN IF NOT EXISTS product_type VARCHAR(120)",
