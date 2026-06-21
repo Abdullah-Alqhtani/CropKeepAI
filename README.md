@@ -137,17 +137,22 @@ Admins can:
 
 Disabled users cannot log in. Non-admin users cannot access the User Management page or admin-only API routes.
 
-## Default Demo Accounts
+## Default Admin Account
 
-The database seed creates demo users for local development.
+Public demo credentials are not hardcoded in the repository.
 
-| Email | Password | Role |
-| --- | --- | --- |
-| admin@cropkeepai.local | password123 | admin |
-| farmer@cropkeepai.local | password123 | farmer |
-| expert@cropkeepai.local | password123 | expert |
+The first admin account is created from backend environment variables:
 
-Change these passwords before using the app outside local demo or development.
+```text
+DEFAULT_ADMIN_EMAIL=your-admin-email@example.com
+DEFAULT_ADMIN_PASSWORD=your-secure-admin-password
+```
+
+For local development, set these values in `backend/.env`.
+
+For production, `DEFAULT_ADMIN_EMAIL` and `DEFAULT_ADMIN_PASSWORD` must be configured before startup. If `APP_ENV=production` and the default admin password is missing, the backend fails startup with a clear error.
+
+After the first admin login, create farmer and expert users from the Admin User Management page.
 
 ## Environment Variables
 
@@ -162,6 +167,13 @@ Add your Groq API key to `backend/.env`:
 
 ```text
 GROQ_API_KEY=your_api_key_here
+```
+
+Configure the default admin account in `backend/.env`:
+
+```text
+DEFAULT_ADMIN_EMAIL=your-admin-email@example.com
+DEFAULT_ADMIN_PASSWORD=your-secure-admin-password
 ```
 
 Do not commit `.env` files. They are ignored by Git.

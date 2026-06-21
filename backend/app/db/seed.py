@@ -1,5 +1,6 @@
 from sqlalchemy.orm import Session
 
+from app.core.config import settings
 from app.core.security import hash_password
 from app.db.image_dataset_importer import import_image_datasets
 from app.db.product_importer import import_product_catalog
@@ -33,20 +34,32 @@ def seed_database() -> None:
 
 
 def _seed_users(db: Session) -> None:
-    users = [
-        User(name="Demo Farmer", email="farmer@cropkeepai.local", password_hash=hash_password("password123"), role=UserRole.farmer),
-        User(name="Crop Expert", email="expert@cropkeepai.local", password_hash=hash_password("password123"), role=UserRole.expert),
-        User(name="System Admin", email="admin@cropkeepai.local", password_hash=hash_password("password123"), role=UserRole.admin),
-    ]
-    for user in users:
-        existing = db.query(User).filter(User.email == user.email).first()
-        if not existing:
-            user.is_active = True
-            db.add(user)
-        else:
-            existing.is_active = True
-            if user.email == "admin@cropkeepai.local":
-                existing.role = UserRole.admin
+    admin_email = settings.default_admin_email.strip().lower()
+    admin_password = settings.default_admin_password
+    is_production = settings.app_env.strip().lower() in {"production", "prod"}
+
+    if not admin_email or not admin_password:
+        message = "DEFAULT_ADMIN_EMAIL and DEFAULT_ADMIN_PASSWORD must be configured to seed the default admin account."
+        if is_production:
+            raise RuntimeError(message)
+        print(f"Skipping default admin seed: {message}", flush=True)
+        return
+
+    existing = db.query(User).filter(User.email == admin_email).first()
+    if not existing:
+        db.add(
+            User(
+                name="System Admin",
+                email=admin_email,
+                password_hash=hash_password(admin_password),
+                role=UserRole.admin,
+                is_active=True,
+            )
+        )
+        return
+
+    existing.role = UserRole.admin
+    existing.is_active = True
 
 
 def _seed_diseases(db: Session) -> dict[str, Disease]:
