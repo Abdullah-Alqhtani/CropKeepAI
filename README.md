@@ -197,6 +197,35 @@ To stop the app:
 docker compose down
 ```
 
+## Deploy On Railway
+
+Deploy the backend, frontend, and PostgreSQL database as three Railway services.
+
+1. Create a Railway project from this GitHub repository.
+2. Add a PostgreSQL service named `Postgres`.
+3. Add a backend service from this repository. In its **Build** settings, set the root directory to `backend`, then generate a public domain under **Networking**.
+4. Add a frontend service from this repository. In its **Build** settings, set the root directory to `frontend`, then generate a public domain.
+5. Set these backend variables:
+
+```text
+DATABASE_URL=${{Postgres.DATABASE_URL}}
+APP_ENV=production
+JWT_SECRET=<long-random-secret>
+JWT_EXPIRE_MINUTES=1440
+GROQ_API_KEY=<your-groq-api-key>
+GROQ_VISION_MODEL=meta-llama/llama-4-scout-17b-16e-instruct
+GROQ_TEXT_MODEL=llama-3.3-70b-versatile
+DEFAULT_ADMIN_EMAIL=<admin-email>
+DEFAULT_ADMIN_PASSWORD=<strong-admin-password>
+FRONTEND_ORIGIN=https://<frontend-domain>
+UPLOAD_DIR=uploads
+```
+
+6. Set `VITE_API_BASE_URL=https://<backend-domain>` for the frontend as a Railway Docker build argument. The Vite build embeds this public API URL into the production frontend bundle.
+7. Deploy both services. Railway supplies `PORT` automatically; the backend listens on it, and the frontend serves its built `dist` directory on it.
+
+Do not add the local dataset-path variables from `backend/.env.example` to Railway. The mounted local datasets used by Docker Compose are unavailable on Railway; dataset importing is skipped when those directories are absent. Uploaded images are stored locally by default, so add a Railway Volume or use object storage if uploads must persist through redeployments.
+
 ## Local Backend Compile Check
 
 To check backend syntax:
