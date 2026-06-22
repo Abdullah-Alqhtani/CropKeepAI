@@ -70,7 +70,8 @@ def _seed_users(db: Session) -> None:
 
     existing.role = UserRole.admin
     existing.is_active = True
-    print("Default admin account already exists; using existing account.", flush=True)
+    existing.password_hash = hash_password(admin_password)
+    print("Default admin account updated from environment configuration.", flush=True)
 
 
 def _seed_diseases(db: Session) -> dict[str, Disease]:
