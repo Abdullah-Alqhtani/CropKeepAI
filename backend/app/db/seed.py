@@ -1,3 +1,4 @@
+from sqlalchemy import func
 from sqlalchemy.orm import Session
 
 from app.core.config import settings
@@ -19,6 +20,12 @@ from app.models import (
 def seed_database() -> None:
     db = SessionLocal()
     try:
+        print(f"DATABASE_URL configured: {'yes' if settings.database_url.strip() else 'no'}", flush=True)
+        print(f"DEFAULT_ADMIN_EMAIL configured: {'yes' if settings.default_admin_email.strip() else 'no'}", flush=True)
+        print(f"DEFAULT_ADMIN_PASSWORD configured: {'yes' if settings.default_admin_password else 'no'}", flush=True)
+        users_count_before_seed = db.query(User).count()
+        print(f"users_count_before_seed: {users_count_before_seed}", flush=True)
+
         _seed_users(db)
         if not db.query(Disease).first():
             diseases = _seed_diseases(db)
@@ -27,6 +34,8 @@ def seed_database() -> None:
             _seed_mappings(db, diseases, products)
         _ensure_baseline_reference_data(db)
         db.commit()
+        users_count_after_seed = db.query(User).count()
+        print(f"users_count_after_seed: {users_count_after_seed}", flush=True)
         import_product_catalog(db)
         import_image_datasets(db)
     finally:
@@ -45,7 +54,7 @@ def _seed_users(db: Session) -> None:
         print(f"Skipping default admin seed: {message}", flush=True)
         return
 
-    existing = db.query(User).filter(User.email == admin_email).first()
+    existing = db.query(User).filter(func.lower(User.email) == admin_email).first()
     if not existing:
         db.add(
             User(
@@ -56,10 +65,12 @@ def _seed_users(db: Session) -> None:
                 is_active=True,
             )
         )
+        print("Default admin account created from environment configuration.", flush=True)
         return
 
     existing.role = UserRole.admin
     existing.is_active = True
+    print("Default admin account already exists; using existing account.", flush=True)
 
 
 def _seed_diseases(db: Session) -> dict[str, Disease]:

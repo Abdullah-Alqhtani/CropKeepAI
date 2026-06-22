@@ -1,6 +1,8 @@
 from fastapi import APIRouter, Depends, HTTPException, status
+from sqlalchemy import func
 from sqlalchemy.orm import Session
 
+from app.core.config import settings
 from app.core.security import create_access_token, hash_password, verify_password
 from app.db.session import get_db
 from app.models import ChatMessage, ChatSession, DiagnosisResult, ImageUpload, ProductRecommendation, User
@@ -15,6 +17,21 @@ from app.schemas.auth import (
 from app.services.auth_service import get_current_user, require_roles
 
 router = APIRouter()
+
+
+@router.get("/admin-check")
+def admin_check(db: Session = Depends(get_db)):
+    admin_email = settings.default_admin_email.strip().lower()
+    users_count = db.query(User).count()
+    default_admin_exists = bool(admin_email) and (
+        db.query(User.id).filter(func.lower(User.email) == admin_email).first() is not None
+    )
+    return {
+        "database_connected": True,
+        "users_count": users_count,
+        "default_admin_email_configured": bool(admin_email),
+        "default_admin_exists": default_admin_exists,
+    }
 
 
 @router.post("/login", response_model=TokenResponse)
