@@ -11,9 +11,20 @@ from app.db.seed import seed_database
 
 app = FastAPI(title="CropKeepAI API", version="1.0.0")
 
+
+def _allowed_origins() -> list[str]:
+    origins = [origin.strip().rstrip("/") for origin in settings.frontend_origin.split(",") if origin.strip()]
+    if "*" in origins:
+        raise RuntimeError("FRONTEND_ORIGIN cannot include '*' when CORS credentials are enabled.")
+    return origins
+
+
+allowed_origins = _allowed_origins()
+print(f"CORS allowed origins: {allowed_origins}", flush=True)
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[settings.frontend_origin],
+    allow_origins=allowed_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
