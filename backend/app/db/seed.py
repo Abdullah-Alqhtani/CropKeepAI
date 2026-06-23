@@ -1,3 +1,9 @@
+"""Insert and maintain the initial database records used by the application.
+
+Startup calls this file after tables exist. It creates reference data and keeps
+the environment-configured default admin account ready for the first login.
+"""
+
 from sqlalchemy import func
 from sqlalchemy.orm import Session
 
@@ -18,6 +24,7 @@ from app.models import (
 
 
 def seed_database() -> None:
+    # Opening and counting users also confirms that the configured database is reachable.
     db = SessionLocal()
     try:
         print(f"DATABASE_URL configured: {'yes' if settings.database_url.strip() else 'no'}", flush=True)
@@ -54,6 +61,7 @@ def _seed_users(db: Session) -> None:
         print(f"Skipping default admin seed: {message}", flush=True)
         return
 
+    # Compare lowercase email values so different letter casing cannot create a second admin.
     existing = db.query(User).filter(func.lower(User.email) == admin_email).first()
     if not existing:
         db.add(
@@ -70,6 +78,7 @@ def _seed_users(db: Session) -> None:
 
     existing.role = UserRole.admin
     existing.is_active = True
+    # Re-hash the configured password so changing the environment value can repair the default admin login.
     existing.password_hash = hash_password(admin_password)
     print("Default admin account updated from environment configuration.", flush=True)
 

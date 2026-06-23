@@ -1,3 +1,7 @@
+/*
+ * Follow-up chat panel for the currently selected diagnosis.
+ * It sends a question with the diagnosis ID so the backend can build relevant AI context.
+ */
 import { useState } from 'react';
 import { Bot, Send, UserRound } from 'lucide-react';
 import { api } from '../services/api.js';
@@ -9,6 +13,7 @@ export function ChatPanel({ diagnosisId }) {
   const [error, setError] = useState('');
 
   async function submit(event) {
+    // Replace local messages with the server's ordered session history after each reply.
     event.preventDefault();
     if (!message.trim()) return;
     setError('');

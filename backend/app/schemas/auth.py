@@ -1,9 +1,16 @@
+"""Describe the safe request and response shapes for authentication endpoints.
+
+Pydantic validates incoming login/admin data and prevents password hashes from
+being included in user responses sent to the frontend.
+"""
+
 from pydantic import BaseModel, Field
 
 from app.models import UserRole
 
 
 class AdminCreateUserRequest(BaseModel):
+    # Admin-created passwords must meet the minimum length before hashing.
     name: str
     email: str
     password: str = Field(min_length=8)
@@ -27,6 +34,7 @@ class AdminResetPasswordRequest(BaseModel):
 
 
 class UserOut(BaseModel):
+    # This public model intentionally excludes password_hash.
     id: int
     name: str
     email: str

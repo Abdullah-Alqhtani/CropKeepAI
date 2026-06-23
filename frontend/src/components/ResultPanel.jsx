@@ -1,7 +1,12 @@
+/*
+ * Present a completed diagnosis and its database-backed product recommendations.
+ * The dashboard supplies the result after an image upload or a history selection.
+ */
 import { AlertTriangle, FlaskConical, Leaf, ShieldCheck } from 'lucide-react';
 import { getAssetUrl } from '../services/api.js';
 
 export function ResultPanel({ diagnosis }) {
+  // Recommendations may be empty when the catalog has no suitable product for this diagnosis.
   const recommendations = diagnosis.recommendations || [];
   const productEmptyMessage = 'No suitable product from our catalog was found for this diagnosis.';
 
@@ -52,6 +57,7 @@ export function ResultPanel({ diagnosis }) {
 }
 
 function InfoBlock({ icon, title, text }) {
+  // Reusable layout keeps each diagnosis section visually consistent.
   return (
     <article className="info-block">
       <div>

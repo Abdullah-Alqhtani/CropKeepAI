@@ -1,3 +1,9 @@
+"""Create catalog product recommendations for a saved diagnosis.
+
+Direct disease-product mappings are preferred. When too few are available, the
+service fills the result with safe general catalog products instead of inventing names.
+"""
+
 from sqlalchemy.orm import Session
 
 from app.models import DiagnosisResult, DiseaseProductMapping, Product, ProductRecommendation
@@ -14,6 +20,7 @@ def create_product_recommendations(
     recommendations = _mapped_recommendations(db, diagnosis)
     fallback_used = False
 
+    # Keep the result useful even when the disease is unknown or has few direct mappings.
     if len(recommendations) < 2:
         fallback_used = True
         recommendations = _fill_with_general_catalog_recommendations(db, diagnosis.id, recommendations)
@@ -39,6 +46,7 @@ def create_product_recommendations(
 
 
 def _mapped_recommendations(db: Session, diagnosis: DiagnosisResult) -> list[ProductRecommendation]:
+    # Unknown diagnoses skip disease-specific mappings and go straight to the fallback selection.
     if diagnosis.disease_name == "Unknown":
         return []
 
@@ -75,6 +83,7 @@ def _fill_with_general_catalog_recommendations(
 ) -> list[ProductRecommendation]:
     products = db.query(Product).order_by(Product.id).all()
     existing_product_ids = {recommendation.product_id for recommendation in existing}
+    # Prefer broadly useful, preventive catalog products before other available products.
     preferred = [product for product in products if _is_preferred_general_product(product)]
     candidates = preferred + [product for product in products if product not in preferred]
     needed = max(0, 2 - len(existing))

@@ -1,3 +1,9 @@
+"""Start and configure the CropKeepAI FastAPI application.
+
+This module connects routes, CORS, database setup, seed data, and static image
+folders before the API begins accepting requests.
+"""
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
@@ -13,6 +19,7 @@ app = FastAPI(title="CropKeepAI API", version="1.0.0")
 
 
 def _allowed_origins() -> list[str]:
+    # Production may have more than one frontend URL, so accept a comma-separated allowlist.
     origins = [origin.strip().rstrip("/") for origin in settings.frontend_origin.split(",") if origin.strip()]
     if "*" in origins:
         raise RuntimeError("FRONTEND_ORIGIN cannot include '*' when CORS credentials are enabled.")
@@ -30,6 +37,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# Create missing tables first, then add the initial reference data and default admin.
 Base.metadata.create_all(bind=engine)
 ensure_schema()
 seed_database()

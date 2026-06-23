@@ -1,3 +1,7 @@
+/*
+ * Main workspace after login, including navigation and shared diagnosis state.
+ * It coordinates child panels so an uploaded diagnosis can be viewed, chatted about, and saved in history.
+ */
 import { useEffect, useState } from 'react';
 import { BookOpen, Database, History, ImageUp, LayoutDashboard, MessageSquare, PackageSearch, UserCog } from 'lucide-react';
 import { api } from '../services/api.js';
@@ -14,6 +18,7 @@ export function DashboardPage({ user, menuOpen, onCloseMenu, menuCloseIcon }) {
   const [history, setHistory] = useState([]);
 
   async function refreshHistory() {
+    // History belongs to the current user because the backend reads the JWT.
     const records = await api.listDiagnoses();
     setHistory(records);
   }
@@ -23,6 +28,7 @@ export function DashboardPage({ user, menuOpen, onCloseMenu, menuCloseIcon }) {
   }, []);
 
   async function handleDiagnosis(result) {
+    // Store the new result once so ResultPanel and ChatPanel can use the same diagnosis.
     setDiagnosis(result);
     await refreshHistory();
   }
@@ -33,6 +39,7 @@ export function DashboardPage({ user, menuOpen, onCloseMenu, menuCloseIcon }) {
     setActiveTab('diagnose');
   }
 
+  // The interface mirrors backend role permissions; the backend still enforces them for security.
   const canReviewKnowledge = user.role === 'admin' || user.role === 'expert';
   const canManageUsers = user.role === 'admin';
   const navItems = [

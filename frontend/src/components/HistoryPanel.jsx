@@ -1,3 +1,7 @@
+/*
+ * Show the current user's saved diagnosis history.
+ * Selecting a row asks DashboardPage to load the full result from the backend.
+ */
 import { CalendarClock } from 'lucide-react';
 import { getAssetUrl } from '../services/api.js';
 
@@ -11,6 +15,7 @@ export function HistoryPanel({ history, onSelect }) {
       <div className="history-list">
         {history.length === 0 && <p className="muted">No diagnosis history yet.</p>}
         {history.map((item) => (
+          // The parent owns navigation, so this component only reports the selected ID.
           <button className="history-row" key={item.id} onClick={() => onSelect(item.id)}>
             <img src={getAssetUrl(item.image_url)} alt="" />
             <span>

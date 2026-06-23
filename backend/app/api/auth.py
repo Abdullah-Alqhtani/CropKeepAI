@@ -1,3 +1,9 @@
+"""Define login and administrator-only user-management API endpoints.
+
+The router uses database sessions and authentication dependencies to protect
+user records, then returns safe response schemas to the frontend.
+"""
+
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy import func
 from sqlalchemy.orm import Session
@@ -21,6 +27,7 @@ router = APIRouter()
 
 @router.get("/admin-check")
 def admin_check(db: Session = Depends(get_db)):
+    # This deployment check deliberately reports status only, never credentials.
     admin_email = settings.default_admin_email.strip().lower()
     users_count = db.query(User).count()
     default_admin_exists = bool(admin_email) and (
@@ -36,6 +43,7 @@ def admin_check(db: Session = Depends(get_db)):
 
 @router.post("/login", response_model=TokenResponse)
 def login(payload: LoginRequest, db: Session = Depends(get_db)):
+    # Successful password verification creates a JWT that the frontend stores for later requests.
     user = db.query(User).filter(User.email == payload.email).first()
     if not user or not verify_password(payload.password, user.password_hash):
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid email or password")
@@ -61,6 +69,7 @@ def create_user(
     db: Session = Depends(get_db),
     _: User = Depends(require_roles("admin")),
 ):
+    # Only an authenticated admin can reach this route through require_roles().
     existing = db.query(User).filter(User.email == payload.email).first()
     if existing:
         raise HTTPException(status_code=status.HTTP_409_CONFLICT, detail="Email already exists")

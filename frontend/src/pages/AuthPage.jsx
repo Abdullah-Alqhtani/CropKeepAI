@@ -1,3 +1,7 @@
+/*
+ * Login screen for CropKeepAI.
+ * It collects credentials, calls the API, and gives the successful token to App.
+ */
 import { useState } from 'react';
 import { Leaf, LogIn, Moon, Sun } from 'lucide-react';
 import { api } from '../services/api.js';
@@ -11,6 +15,7 @@ export function AuthPage({ onAuth, theme, setTheme }) {
   const [loading, setLoading] = useState(false);
 
   async function submit(event) {
+    // Prevent the browser from reloading, then show a useful error if login fails.
     event.preventDefault();
     setError('');
     setLoading(true);

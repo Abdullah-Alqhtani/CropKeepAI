@@ -1,3 +1,9 @@
+"""Describe diagnosis and recommendation data returned by the API.
+
+These response models keep database objects separate from the JSON contract used
+by the React frontend.
+"""
+
 from datetime import datetime
 
 from pydantic import BaseModel
@@ -37,6 +43,7 @@ class ProductRecommendationOut(BaseModel):
 
 
 class DiagnosisOut(BaseModel):
+    # The full result combines stored diagnosis details with recommended catalog products.
     id: int
     crop_type: str
     disease_name: str

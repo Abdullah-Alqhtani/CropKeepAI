@@ -1,3 +1,9 @@
+"""Expose read-only catalog, knowledge, and dataset metadata endpoints.
+
+Role checks keep expert/admin reference information separate from the general
+product catalog available to authenticated farmers.
+"""
+
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 
@@ -48,6 +54,7 @@ def dataset_images(
     db: Session = Depends(get_db),
     _: User = Depends(require_roles("admin", "expert")),
 ):
+    # Optional filters let the frontend request a small, relevant part of the dataset index.
     query = db.query(DatasetImage)
     if source:
         query = query.filter(DatasetImage.source == source)

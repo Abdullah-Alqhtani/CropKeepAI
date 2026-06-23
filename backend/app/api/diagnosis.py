@@ -1,3 +1,9 @@
+"""Provide authenticated image-upload and diagnosis-history endpoints.
+
+This router saves an uploaded image, asks the AI service for evidence, matches
+that evidence with database knowledge, and stores the final result for the user.
+"""
+
 from pathlib import Path
 from uuid import uuid4
 
@@ -30,6 +36,7 @@ async def create_diagnosis(
     if image.content_type not in ALLOWED_TYPES:
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Only JPG and PNG files are supported")
 
+    # Save first so the AI service can read the image from a stable server-side path.
     upload = await _save_upload(db, user, image)
 
     try:
@@ -46,6 +53,7 @@ async def create_diagnosis(
     detected_crop = classifier_data.get("crop_type", "Unknown")
     detected_disease = classifier_data.get("disease_name", "Unknown")
     detected_symptoms = classifier_data.get("symptoms", "")
+    # Database matching makes treatment and product advice come from approved stored data.
     matched_disease, normalized_disease, fuzzy_match_score = match_database_disease(
         db,
         detected_crop,
@@ -146,6 +154,7 @@ def get_diagnosis(
 
 
 async def _save_upload(db: Session, user: User, image: UploadFile) -> ImageUpload:
+    # A generated filename prevents two uploads with the same original name from overwriting each other.
     Path(settings.upload_dir).mkdir(parents=True, exist_ok=True)
     extension = ".png" if image.content_type == "image/png" else ".jpg"
     filename = f"{uuid4().hex}{extension}"

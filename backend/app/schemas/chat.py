@@ -1,3 +1,9 @@
+"""Describe follow-up chat requests and responses.
+
+The chat API uses these models to validate a question and return a session's
+ordered messages to the frontend.
+"""
+
 from datetime import datetime
 
 from pydantic import BaseModel

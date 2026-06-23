@@ -1,3 +1,9 @@
+"""Handle follow-up questions about a saved diagnosis.
+
+Each user gets a separate chat session per diagnosis, and the AI receives the
+diagnosis, relevant knowledge-base entries, and recent conversation context.
+"""
+
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 
@@ -13,6 +19,7 @@ router = APIRouter()
 
 @router.post("", response_model=ChatResponse)
 def chat(payload: ChatRequest, db: Session = Depends(get_db), user: User = Depends(get_current_user)):
+    # Users may only chat about their own diagnosis records.
     diagnosis = db.query(DiagnosisResult).filter(DiagnosisResult.id == payload.diagnosis_id).first()
     if not diagnosis or diagnosis.user_id != user.id:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Diagnosis not found")
@@ -32,6 +39,7 @@ def chat(payload: ChatRequest, db: Session = Depends(get_db), user: User = Depen
     db.add(user_message)
     db.commit()
 
+    # Build focused context instead of sending the entire database to the AI service.
     history = db.query(ChatMessage).filter(ChatMessage.session_id == session.id).order_by(ChatMessage.created_at).all()
     entries = retrieve_knowledge(db, diagnosis.crop_type, diagnosis.disease_name)
     diagnosis_context = (

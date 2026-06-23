@@ -1,3 +1,9 @@
+"""Describe catalog and dataset information exposed by read-only API routes.
+
+These models select only the fields the frontend needs when it displays products,
+knowledge entries, and dataset statistics.
+"""
+
 from pydantic import BaseModel
 
 

@@ -1,3 +1,9 @@
+"""Call Groq's OpenAI-compatible API for image classification and follow-up chat.
+
+The AI identifies evidence from an image, while database services remain the
+source of treatment and product recommendations.
+"""
+
 import base64
 import json
 import os
@@ -12,6 +18,7 @@ GROQ_BASE_URL = "https://api.groq.com/openai/v1"
 
 
 def _client() -> OpenAI:
+    # Groq accepts the OpenAI client format when its compatible base URL is supplied.
     return OpenAI(
         base_url=GROQ_BASE_URL,
         api_key=_groq_api_key(),
@@ -23,11 +30,13 @@ def _groq_api_key() -> str:
 
 
 def _load_image_data_url(path: str, content_type: str) -> str:
+    # The vision request sends the saved image as a base64 data URL.
     encoded = base64.b64encode(Path(path).read_bytes()).decode("utf-8")
     return f"data:{content_type};base64,{encoded}"
 
 
 def diagnose_crop_image(image_path: str, content_type: str, knowledge_context: str) -> dict:
+    # Refuse the request clearly when no AI key is configured; the route can use fallback behavior.
     if not _groq_api_key():
         raise RuntimeError("GROQ_API_KEY is not configured.")
 
@@ -59,6 +68,7 @@ Rules:
 Retrieved knowledge:
 {knowledge_context}
 """
+    # The strict prompt asks the model for machine-readable evidence only.
     response = _client().chat.completions.create(
         model=settings.groq_vision_model,
         messages=[

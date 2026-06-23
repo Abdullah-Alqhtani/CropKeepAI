@@ -1,3 +1,9 @@
+"""Match AI evidence to stored disease knowledge and build safe diagnosis text.
+
+This service prefers database facts over generated advice and returns general
+plant-care guidance when the image evidence is too uncertain to match a disease.
+"""
+
 import re
 from difflib import SequenceMatcher
 
@@ -35,6 +41,7 @@ UNKNOWN_ENVIRONMENT = "\n".join(
 
 
 def normalize_disease_name(value: str, crop: str = "") -> str:
+    # Remove punctuation and generic words so names from different sources compare more reliably.
     text = (value or "").lower()
     text = re.sub(r"[^a-z0-9\s]", " ", text)
     text = re.sub(r"\b(disease|plant|crop|leaf|leaves)\b", " ", text)
@@ -57,6 +64,7 @@ def match_database_disease(
     evidence_terms = _terms(" ".join([detected_symptoms or "", " ".join(tags or [])]))
     diseases = db.query(Disease).join(Disease.crop_type).all()
 
+    # Use an exact normalized match first; fuzzy and evidence scoring are the fallback.
     exact_matches: list[tuple[bool, Disease]] = []
     for disease in diseases:
         normalized_database = normalize_disease_name(disease.name, disease.crop_type.name)
@@ -113,6 +121,7 @@ def match_database_disease(
         flush=True,
     )
 
+    # A crop match permits a lower score because it is extra evidence from the image.
     if best_match and (best_score >= 0.55 or (best_crop_matches and best_score >= 0.25)):
         return best_match, normalized_detected, round(best_score, 3)
     return None, normalized_detected, round(best_score, 3)
@@ -138,6 +147,7 @@ def build_database_diagnosis(
     detected_symptoms = classifier_data.get("symptoms") or "Unknown"
 
     if not matched_disease:
+        # Uncertain diagnoses never invent a disease; they return cautious general care instructions.
         diagnosis = {
             "crop_type": detected_crop,
             "disease_name": "Unknown",

@@ -1,3 +1,7 @@
+/*
+ * Image selection and diagnosis submission panel.
+ * It previews a local JPG/PNG, sends it to the backend, then passes the saved diagnosis to the dashboard.
+ */
 import { useMemo, useState } from 'react';
 import { ImageUp, Send, X } from 'lucide-react';
 import { api } from '../services/api.js';
@@ -7,9 +11,11 @@ export function UploadPanel({ onDiagnosis }) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
+  // A temporary browser URL shows the selected image before it is uploaded.
   const previewUrl = useMemo(() => (file ? URL.createObjectURL(file) : ''), [file]);
 
   async function submit(event) {
+    // api.diagnose sends multipart FormData; the backend validates the file type and saves it.
     event.preventDefault();
     if (!file) return;
     setError('');

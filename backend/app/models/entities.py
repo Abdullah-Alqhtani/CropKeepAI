@@ -1,3 +1,9 @@
+"""Define the database tables and relationships used by CropKeepAI.
+
+SQLAlchemy turns these Python classes into PostgreSQL tables, which are shared
+by the API routes, seed routine, and recommendation services.
+"""
+
 from datetime import datetime
 from enum import Enum
 
@@ -14,6 +20,7 @@ class UserRole(str, Enum):
 
 
 class User(Base):
+    # Login accounts store a password hash, never the original password.
     __tablename__ = "users"
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True)
@@ -101,6 +108,7 @@ class ImageUpload(Base):
 
 
 class DiagnosisResult(Base):
+    # A diagnosis belongs to the user and the uploaded image that produced it.
     __tablename__ = "diagnosis_results"
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True)
@@ -123,6 +131,7 @@ class DiagnosisResult(Base):
 
 
 class ProductRecommendation(Base):
+    # This join table records which catalog products were suggested for a diagnosis.
     __tablename__ = "product_recommendations"
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True)

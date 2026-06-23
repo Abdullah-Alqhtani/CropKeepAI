@@ -1,3 +1,7 @@
+/*
+ * Display either product catalog rows or knowledge-base rows.
+ * The selected type determines which protected backend endpoint is requested.
+ */
 import { useEffect, useState } from 'react';
 import { Database, PackageSearch } from 'lucide-react';
 import { api } from '../services/api.js';
@@ -7,6 +11,7 @@ export function CatalogPanel({ type }) {
   const [error, setError] = useState('');
 
   useEffect(() => {
+    // Reload when the dashboard switches between catalog and knowledge views.
     const loader = type === 'products' ? api.products : api.knowledge;
     loader()
       .then(setItems)
